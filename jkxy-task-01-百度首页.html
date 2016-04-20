@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="web前端15期1班-董鹏腾" />
+	<!-- tab-icon图标 -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/X-icon" />
+	<title>百度一下，你就知道</title>
+	<link rel="stylesheet" href="css/bd_index.css" />
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<nav class="clearfix">
+				<a href="#" class="topnav">糯米</a>
+				<a href="#" class="topnav">新闻</a>
+				<a href="#" class="topnav">hao123</a>
+				<a href="#" class="topnav">地图</a>
+				<a href="#" class="topnav">视频</a>
+				<a href="#" class="topnav">贴吧</a>
+				<a href="#" class="topnav plain">登录</a>
+				<a href="#" class="topnav plain">设置</a>
+				<span><a href="#" class="more">更多产品</a></span>
+			</nav>
+		</header>
+		<section>
+			<div class="mid_wrapper">
+				<div id="logo">
+					<img src="img/big-logo.png" alt="logo图片" title="百度" />
+				</div>
+				<form id="search">
+					<span class="search_area">
+						<span class="camera"></span>
+						<input type="text" class="srch_text" id="123" maxlength="255" autocomplete="off" />
+					</span><!--换行会在行内元素间形成微小像素(3像素)间隔bug
+				 --><span class="submit_area">
+						<input type="submit" class="submit_btn" value="百度一下" />
+					</span>
+				</form>
+			</div>
+		</section>
+	</div>
+
+	<script type="text/javascript">
+		// 打开首页搜索输入框自动获取焦点
+		window.onload = function()
+		{
+		    document.getElementById("123").focus();
+		}
+	</script>
+</body>
+</html>
