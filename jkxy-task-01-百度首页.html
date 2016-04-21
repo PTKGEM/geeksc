@@ -32,7 +32,7 @@
 				<form id="search">
 					<span class="search_area">
 						<span class="camera"></span>
-						<input type="text" class="srch_text" id="123" maxlength="255" autocomplete="off" />
+						<input type="text" class="srch_text" id="sousuoK" maxlength="100" autocomplete="off" />
 					</span><!--换行会在行内元素间形成微小像素(3像素)间隔bug
 				 --><span class="submit_area">
 						<input type="submit" class="submit_btn" value="百度一下" />
@@ -44,9 +44,39 @@
 
 	<script type="text/javascript">
 		// 打开首页搜索输入框自动获取焦点
-		window.onload = function()
-		{
-		    document.getElementById("123").focus();
+		window.onload = function() {
+
+			var sosu = document.getElementById('sousuoK');
+			var htmlBody = document.getElementsByTagName('body')[0];
+
+			// 页面刷新加载完毕搜索框自动获取焦点高亮
+		    sosu.focus();
+		    if ( document.activeElement.id = "sousuok" ) {
+		    	sosu.setAttribute("class", "srch_text searchfocus");
+		    	// sosuK.style.borderColor = "blue";
+		    	// sosuK.bind("mousehover", function (e) {
+		    	// 	return false;
+		    	// })
+		    }
+
+			// alert(sosuK.attributes['class'].value);
+		    // sosuK.addEventListener('focus', function () {
+		    // 	sosuK.style.borderColor = "blue";	
+		    // 	},'false')
+		    
+		    sosu.addEventListener('click', function () {
+		    	// 获取元素属性值 .attributes["属性名"].value
+		       	if ( sosu.attributes['class'].value = "srch_text" ) {
+		       		sosu.setAttribute("class", "srch_text searchfocus");
+		       	}
+		   	},'false')
+
+		    htmlBody.addEventListener('click', function () {
+		    	if ( sosu.attributes['class'].value = "srch_text searchfocus" ) {
+		    		sosu.setAttribute("class", "srch_text");
+		    	}
+			},'false')
+
 		}
 	</script>
 </body>

@@ -125,23 +125,26 @@ input {
 
 #search {
 	width: 641px;
-	height: 37px;
+	height: 40px;
 	margin: 22px auto 0;
 }
 
-#search > .search_area {
+.search_area {
 	position: relative;
 	display: inline-block;
-	width: 540px;
-	height: 36px;
-	border: 1px solid #333;
+	width: 536px;
+	height: 40px;
 	border-right: 0;
 	outline: 0;
 }
 
+.search_area:hover {
+	border-color: #999 transparent #b3b3b3 #999;
+}
+
 .camera {
 	position: absolute;
-	right: 11px;
+	right: 12px;
 	top: 50%;
 	margin-top: -8px;
 	width: 18px;
@@ -154,37 +157,56 @@ input {
 	background-position: 0 -21px;
 }
 
-#search  .srch_text {
-	display: inline-block;
-	width: 500px;
-	height: 22px;
-	margin: 6px 0 0 7px;
-	font: 16px/18px arial;
-	text-align: left;
-	background: transparent;
-	border: 0;
-	outline: 0;	
-	z-index: 100;
+.srch_text {
+	width: 536px;
+	height: 40px;
+	font: 16px/20px arial;
+	padding: 9px 7px;
+	padding-right: 49px !important;
+	border: 1px solid #b8b8b8;
+	border-bottom: 1px solid #ccc;
+	border-right: 0;
+	vertical-align: top;
+	outline: none;
+	box-shadow: none;
 }
+
+.srch_text:hover {
+	border-color: #999 transparent #b3b3b3 #999;
+}
+
+.searchfocus {
+	/*!important覆盖:hover伪类效应*/
+	border-top: 1px solid #38f !important;
+	border-bottom: 1px solid #38f !important;
+	border-left: 1px solid #38f !important;
+} 
 
 .submit_area {
 	display: inline-block;
-	width: auto;
-	height: auto;
-	border-bottom: 1px solid transparent;
+	width: 102px;
+	height: 40px;
+	border: 1px solid #38f;
+	border-bottom: 1px solid #2e7ae5;
+	cursor: pointer;
 	vertical-align: top;
+	zoom: 1;
 }
 
 .submit_btn {
-	width: 100px;
-	height: 36px;
+	width: 102px;
+	height: 39px;
 	color: white;
-	font-size: 15px;
+	font-size: 16px;
 	letter-spacing: 1px;
-	background: #3385FF;
-	border-bottom: 1px solid #2d78f4;
+	background: #38f;
 	outline: medium;
 	-webkit-appearance: none;  /*设置外观*/
 	-webkit-border-radius: 0;
-	cursor: pointer;
+}
+
+.submit_btn:hover {
+	background-color: #317ef3;
+	border-bottom: 1px solid #2868c8;
+	box-shadow: 1px 1px 1px #ccc;
 }
