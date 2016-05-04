@@ -1,0 +1,106 @@
+html,
+body,
+div {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    -weblik-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*新旧盒模型实现子元素水平垂直居中 Start*/
+body {
+  display: -webkit-box;  /* 老版本语法 */
+  display: -moz-box;    /* 老版本语法: Firefox */ 
+  display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+  display: -webkit-flex;  /* 新版本语法： Chrome 21+ */
+  display: flex;       /* 新版本语法： Opera 12.1, Firefox 22+ */
+
+  /*垂直居中*/	
+  /*老版本语法*/
+  -webkit-box-align: center; 
+  -moz-box-align: center;
+  /*混合版本语法*/
+  -ms-flex-align: center; 
+  /*新版本语法*/
+  -webkit-align-items: center;
+  align-items: center;
+
+  /*水平居中*/
+  /*老版本语法*/
+  -webkit-box-pack: center; 
+  -moz-box-pack: center; 
+  /*混合版本语法*/
+  -ms-flex-pack: center; 
+  /*新版本语法*/
+  -webkit-justify-content: center;
+  justify-content: center;
+
+  margin: 0;
+  height: 100%;
+  width: 100%; /*兼容火狐*/
+} 
+/*新旧盒模型实现子元素水平垂直居中 End*/
+
+/*设置父级包裹元素的font-size:0;消除inline-block元素间隙*/
+body {
+	font-size: 0;
+}
+
+div.wrapper {
+  width: 300px;
+  height: 300px;
+}
+
+div.wrapper > div {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}
+
+div.wrapper > div:first-child,
+div.wrapper > div:last-child {
+    margin: 0 100px;
+}
+
+div.wrapper > div.top {
+    background-color: #356AFF;
+}
+
+div.wrapper > div.right {
+    background-color: #35F216;
+}
+
+div.wrapper > div.center {
+    background-color: #ffff00;
+    margin-top: -100px;
+}
+
+div.wrapper > div.bottom {
+    background-color: #FF7F21
+}
+
+div.wrapper > div.left {
+    background-color: #D20EF0;
+}
+/*将图片包裹元素设置为table和table-cell实现水平垂直居中 Start*/
+div.center > p {
+	display: table;
+	width: 100px;
+	height: 100px;
+}
+
+div.center > p > i {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+div.center img {
+	width: 50px;
+	height: 50px;
+}
+/*将图片包裹元素设置为table和table-cell实现水平垂直居中 End*/

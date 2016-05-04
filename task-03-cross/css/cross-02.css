@@ -1,0 +1,84 @@
+html,
+body,
+div {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    -weblik-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div.wrapper {
+    width: 300px;
+    height: 300px;
+    /*利用margin:auto;、绝对定位实现外层包裹块居中*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    outline: none;
+}
+/*清楚浮动 Start*/
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix {
+    zoom:1; /*兼容IE6/7*/
+}
+/*清楚浮动 End*/
+
+div.wrapper > div {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+div.wrapper > div:first-child,
+div.wrapper > div:last-child {
+    margin: 0 100px;
+}
+
+div.wrapper > div.top {
+    background-color: #356AFF;
+}
+
+div.wrapper > div.right {
+    background-color: #D20EF0;
+}
+
+div.wrapper > div.center {
+    background-color: #ffff00;
+}
+
+div.wrapper > div.bottom {
+    background-color: #FF7F21
+}
+
+div.wrapper > div.left {
+    background-color: #35F216;
+}
+/*给包含图片的父级的设置文本水平居中，行高占满容器*/
+div.center {
+    text-align: center;
+    line-height: 100px;
+}
+/*图片默认是垂直底部对齐，所以设置vertical-align: middle;使图片垂直居中对齐*/
+/*实现了无论图片宽高大小都可使图片水平垂直居中*/
+div.center > img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
