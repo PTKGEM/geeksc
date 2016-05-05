@@ -1,0 +1,178 @@
+html,
+body,
+header,
+nav,
+article,
+section,
+footer,
+div,
+p,
+table,
+thead,
+tbody,
+tr,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-image: url('../img/beijing.gif');
+	background-color: rgb(204, 232, 207);
+}
+
+article form h2 {
+	font-family: "黑体";
+	text-align: center;
+}
+
+header nav {
+	width: 100%;
+	height: 90px;
+	margin: 15px auto;
+	position: relative;
+}
+
+header nav div {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+header nav a {
+	display: inline-block;
+	margin-right: 10px;
+	font-size: 14px;
+}
+
+header nav a:link,
+header nav a:visited,
+header nav a:hover,
+header nav a:active {
+	color: rgb(255, 0, 153);
+	text-decoration: none;
+}
+
+header nav img {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+b,
+article section table tbody tr td:first-child i {
+	color: rgba(255, 0, 0, .7);
+}
+
+label {
+	display: inline-block;
+	vertical-align: baseline;
+	cursor: pointer;
+}
+
+label input {
+	position: relative;
+	top: 3px;
+}
+
+div.wrapper {
+	border: 1px solid red;
+	border-radius: 30px;
+	width: 720px;
+	height: auto;
+	font-size: 12px;
+	color: #333333;
+	background-color: #ffffff;
+	position: absolute;
+	left: 50%;
+	margin-left: -360px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 0 40px;
+}
+
+article section table {
+	width: 100%;
+	/*去除table元素间空隙*/
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+article section table caption {
+	font: 12px/22px "宋体";
+}
+
+article section table caption a:link,
+article section table caption a:visited {
+	color: #0000ff;
+}
+article section table caption a:hover,
+article section table caption a:active {
+	color: #ff0000;
+}
+
+caption,
+tr,
+th,
+td {
+	margin: 0;
+	border: 1px solid #aaaaaa;
+}
+
+article section table thead th {
+	font: 14px/24px "黑体";
+	font-weight: bolder;
+	text-align: left;
+	color: rgb(0, 51, 153);
+	background-color: #dddddd;
+	padding-left: 10px;
+}
+
+article section table tbody tr td:first-child {
+	width: 120px;
+	height: auto;
+	text-align: right;
+	padding: 5px;
+}
+
+article section table tbody tr td:last-child {
+	padding: 2px;
+	line-height: 18px;
+}
+
+article section table tbody tr td span {
+	color: #0000ff;
+	padding: 5px;
+}
+
+article section table tfoot tr td {
+	position: relative;
+	height: 80px;
+}
+
+article section table tfoot tr td input {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100px;
+	height: 24px;
+	margin-left: -50px;
+	margin-top: -12px;
+}
+
+div.wrapper footer p {
+	width: 100%;
+	height: 40px;
+	margin-top: 5px;
+	text-align: center;
+}
