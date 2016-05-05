@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>实战盒子模型与弹性盒模型</title>
+	<link rel="shortcut icon" href="img/logo.ico" type="image/X-icon" />
+	<link rel="stylesheet" href="css/boxstyle.css" />
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h2>实战盒子模型与弹性盒模型</h2>
+		</header>
+		<div class="content">
+			<hr />
+			<!-- 正常盒子与怪异盒子对比 Start -->
+			<section>
+				<h3>正常盒子与怪异盒子对比</h3>
+				<figure>
+				    <figcaption>W3C标准盒模型&nbsp(示例图)</figcaption>
+				    <img src="img/w3cbox.PNG" alt="w3cbox-pic">
+				</figure>
+				<p>例子：</p>
+				<div class="container">
+					<div class="w3cbox">
+						<p>
+							box-sizing: content-box;<br />
+							width: 200px;<br />
+							height: 200px;<br />
+							padding: 30px;<br />
+							border: 20px solid orange;<br />
+							margin: 30px;<br />
+						</p>
+					</div>
+				</div>
+				<br /><br /><br />
+				<figure>
+				    <figcaption>IE怪异盒模型&nbsp(示例图)</figcaption>
+				    <img src="img/iebox.PNG" alt="iebox-pic">
+				</figure>
+				<p>例子：</p>
+				<div class="container">
+					<div class="iebox">
+						<p>
+							box-sizing: border-box;<br />
+							width: 300px;<br />
+							height: 300px;<br />
+							padding: 30px;<br />
+							border: 20px solid orange;<br />
+							margin: 30px;<br />
+						</p>
+					</div>
+				</div>
+			</section>
+			<!-- 正常盒子与怪异盒子对比 End -->
+			<hr />
+			<!-- 弹性盒子水平分栏，垂直分栏，排序(flex)，cloumn分栏 Start -->
+			<section>
+				<h3>弹性盒子水平分栏，垂直分栏，排序(flex)，cloumn分栏</h3>
+				<div>
+					<p>水平分栏——例子：</p>
+					<ul id="box1" class="box">
+						<li>flex:1;</li>
+						<li>flex:1;</li>
+						<li>flex:1;</li>
+					</ul>
+				</div>
+				<div>
+					<p>垂直分栏——例子：</p>
+					<ul id="box2" class="box">
+						<li>flex:1</li>
+						<li>flex:2</li>
+						<li>flex:3</li>
+					</ul>
+				</div>
+				<div>
+					<p>排序(flex)——例子：</p>
+					<ul id="box3" class="box">
+						<li>flex:1<br /><br />order:3;</li>
+						<li>flex:2<br /><br />order:5;</li>
+						<li>flex:3<br /><br />order:4;</li>
+						<li>flex:4<br /><br />order:2;</li>
+						<li>flex:5<br /><br />order:6;</li>
+						<li>flex:6<br /><br />order:1;</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<div>
+					<p>cloumn分栏——例子：</p>
+					<div id="clo">
+						<p>
+							科比·布莱恩特（Kobe Bryant），1978年8月23日出生于美国宾夕法尼亚州费城，前美国职业篮球运动员，司职得分后卫/小前锋（锋卫摇摆人），从1996年起一直效力于NBA洛杉矶湖人队，是前美国职业篮球运动员乔·布莱恩特的儿子。
+						</p>
+						<p>
+							科比是NBA最好的得分手之一，突破、投篮、罚球、三分球他都驾轻就熟，几乎没有进攻盲区，单场比赛81分的个人纪录就有力地证明了这一点。除了疯狂的得分外，科比的组织能力也很出众，经常担任球队进攻的第一发起人。另外科比还是联盟中最好的防守人之一，贴身防守非常具有压迫性。
+						</p>
+						<p>
+							2016年4月14日，在参加了职业生涯最后一场比赛（湖人VS爵士）之后，科比·布莱恩特正式宣布退役。
+						</p>
+				    </div>
+				</div>
+			</section>
+			<!-- 弹性盒子水平分栏，垂直分栏，排序(flex)，cloumn分栏 End -->
+			<hr />
+			<section>
+				<h3>新/旧版弹性盒子居中布局</h3>
+				<div class="outer">
+					<div class="inner"></div>
+				</div>
+			</section>
+			<hr />
+		</div>
+		<footer>
+			<span>未完！持续更新..</span>
+		</footer>
+	</div>
+</body>
+</html>
