@@ -178,7 +178,7 @@ tbody td.num {
 }
 
 .scrollTbody::-webkit-scrollbar-thumb {
-	background-color: #0033ff;
+	background-color: #0033FF;
 }
 
 .scrollTbody tr > td:last-child {
