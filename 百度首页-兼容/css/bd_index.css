@@ -1,0 +1,529 @@
+/*CSS按照DOM结构自上而下*/
+/*CSS-reset*/
+html,
+body,
+header,
+section,
+footer,
+form,
+input,
+nav,
+div,
+p,
+b,
+li,
+img,
+span {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+	border: none;
+}
+
+html,
+body {
+	/*浏览器默认字体大小即16px, Arial属无衬线字体*/
+	font:16px "Arial";	
+	width: 100%;
+	height:100%;
+	/*最小布局宽高*/
+	min-width: 500px;
+	min-height: 600px;
+	background-color: #fff;
+	position: relative;
+}
+
+body > div.wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	width: 100%;
+	height: 42px;
+	overflow: hidden;
+}
+
+header > nav {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	margin: 19px 0 5px 0;
+	padding: 0 96px 0 0;
+	color: #fff;
+}
+
+/*清浮动-Start*/
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.clearfix {
+	/*兼容 IE6/7*/
+	zoom: 1;  
+}
+/*清浮动-End*/
+
+header nav > a {
+	float: left;
+	display: inline-block;
+	margin-left: 20px;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: bold;
+	text-decoration: underline;
+	
+	behavior: url(csshover.htc);
+}
+
+nav > a:link,
+nav > a:visited {
+	color: #333;
+}
+
+nav > a:hover,
+nav > a:active {
+	color: #2319DC;
+}
+
+nav a[class=plain] {
+	font-weight: normal;
+}
+
+header nav span a.more {
+	position: absolute;
+	right: 12px;
+	display: block;
+	width: 60px;
+	height: 23px;
+	color: white;
+	background-color: #38f;
+	font-size: 13px;
+	line-height: 24px;
+	text-align: center;
+	text-decoration: none;
+	border-bottom: 1px solid #38f;
+}
+
+/*"设置"响应的toolTip菜单栏 Start*/
+.wrapper > div.setingtooltip {
+	position: absolute;
+	right: 72px;
+	top: 50px;
+	width: 70px;
+	height: auto;
+	font-size: 12px;
+	background-color: #fff;
+	border: 1px solid #d1d1d1;
+	box-shadow: 0 0 3px #aaa;
+	display: none;
+	z-index: 990;
+}
+/*制作toolTip上方小三角形视觉效果*/
+.wrapper > div.setingtooltip::before {
+	content: "";
+	position: absolute;
+	top: -.5em; left: 2.2em;
+	padding: .4em;
+	width: 0;
+	height: 0;
+	display: block;
+	background-color: inherit;
+	border: inherit;
+	border-right: 0;
+	border-bottom: 0;
+	transform: rotate(45deg);
+}
+
+.wrapper > div.setingtooltip a {
+	display: block;
+	text-align: left;
+	margin: 0 !important;
+	padding: 0 9px;
+	line-height: 26px;
+	color: #333;
+	text-decoration: none;
+	z-index: 9;
+}
+
+.wrapper > div.setingtooltip a:first-child {
+	/*因为利用CSS3微元素和transform: rotate(45deg);制作的toolTip
+	上方小三角形会覆盖在本身
+	元素之上，所以设置本身元素position: relative;和z-index: 99;
+	提高层级（有点hack）*/
+	position: relative;
+	z-index: 99;
+}
+
+.wrapper > div.setingtooltip a:hover {
+	color: #fff;
+	background-color: #38f;
+}
+/*"设置"响应的toolTip菜单栏 End*/
+
+/*"更多产品"右侧边导航栏 Start*/
+header section {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 85px;
+	height: 100%;
+	min-height: 600px;
+	font: 12px/2em Arial;
+	text-align: center;
+	background-color: #f9f9f9;
+	border-left: 1px solid #e7e7e7;
+	overflow: hidden;
+	display: none;
+	/*设置z-index:999;防止层级被页面中其他元素覆盖，
+	从而影响js触发的鼠标移入移出...等事件效果*/
+	z-index: 999;
+}
+
+header section .sidebar-more {
+	box-sizing: content-box;
+	color: #333;
+	font-size: 13px;
+	width: 66px;
+	height: 43px;
+	line-height: 43px;
+	padding-top: 9px;
+	margin: 0 auto;
+	border-bottom: 1px solid #f0f0f0;
+	cursor: default;
+	z-index: 5;
+}
+
+header section .sidebar-wrapper-more {
+	margin-top: 12px;
+	width: 85px;
+	height: 30px;
+	overflow: hidden;
+}
+
+header aside div.side-wrapper a {
+	display: block;
+	text-align: center;
+	width: 66px;
+	height: 76px;
+	margin: 0 auto;
+	border-bottom: 1px solid #e0e0e0;
+	color: #666;
+	text-decoration: none;
+	overflow: hidden;
+}
+
+header aside div.side-wrapper a:hover {
+	text-decoration: underline;
+}
+header aside div.side-wrapper a:active {
+	color: #2319DC;
+}
+
+#sidebar-nav div.sidebar-wrapper-more a {
+	text-decoration: underline;
+}
+
+header aside a > span {
+	width: 36px;
+	height: 36px;
+	display: block;
+	margin: 10px auto 5px;
+	cursor: pointer;
+}
+
+header aside a > span.bd-yinyue {
+	/*“百度音乐”图片较其他图片宽4px,所以设置width:40px;*/
+	width: 40px;
+	background: url('../img/aside-bd-pic.png') -72px 0;
+}
+header aside a > span.bd-tupian {
+	background: url('../img/aside-bd-pic.png') -112px 0;
+}
+header aside a > span.bd-zhidao {
+	background: url('../img/aside-bd-pic.png') -36px 0;
+}
+header aside a > span.bd-wenku {
+	background: url('../img/aside-bd-pic.png') -148px 0;
+}
+header aside a > span.bd-fengyunbang {
+	background: url('../img/aside-bd-pic.png') -184px 0;
+}
+header aside a > span.bd-tuiguang {
+	background: url('../img/aside-bd-pic.png') -220px 0;
+}
+/*"更多产品"右侧边导航栏 End*/
+
+section #logo {
+	width: 100%;
+	height: 132px;
+	text-align: center;
+}
+
+section #logo > img {
+	width: 270px;
+	height: 129px;
+	outline: none;
+}
+
+section form input {
+	border: 0;
+	padding: 0;
+}
+
+section #search {
+	width: 641px;
+	height: 40px;
+	margin: 22px auto 0;
+}
+
+section form .search_area {
+	position: relative;
+	display: inline-block;
+	width: 536px;
+	height: 40px;
+	_height: 40px;
+	border-right: 0;
+	outline: 0;
+}
+
+input {
+	behavior: url('../csshover.htc');
+}
+
+section form .search_area:hover {
+	border-color: #999 transparent #b3b3b3 #999;
+	
+	behavior: url('../csshover.htc');
+}
+
+section form span.camera {
+	position: absolute;
+	right: 12px;
+	top: 50%;
+	margin-top: -8px;
+	width: 18px;
+	height: 16px;
+	background: #fff url('../img/camera.png') no-repeat 0 0;
+	cursor: pointer;
+}
+
+section form span.camera:hover {
+	background-position: 0 -21px;
+}
+
+section form input.srch_text {
+	width: 536px;
+	height: 40px;
+	font: 16px/20px arial;
+	padding: 9px 7px;
+	padding-right: 49px !important;
+	border: 1px solid #b8b8b8;
+	border-bottom: 1px solid #ccc;
+	border-right: 0;
+	vertical-align: top;
+	outline: none;
+	box-shadow: none;
+	+padding: 0;/*IE6、7识别*/
+	_padding: 0;/*IE6识别*/
+}
+
+section form input.srch_text:hover {
+	+padding: 0;/*IE6、7识别*/
+	_padding: 0;/*IE6识别*/
+	border-color: #999 transparent #b3b3b3 #999;
+}
+/*搜索框获取焦点效果*/
+section form input.srch_text:focus {
+	border-top: 1px solid #38f !important;
+	border-bottom: 1px solid #38f !important;
+	border-left: 1px solid #38f !important;
+}
+
+/*js实现获取焦点效果所需class样式*/
+section form span.searchfocus {
+	/*!important覆盖:hover伪类效应*/
+	border-top: 1px solid #38f !important;
+	border-bottom: 1px solid #38f !important;
+	border-left: 1px solid #38f !important;
+}
+
+#search .submit_area {
+	display: inline-block;
+	width: 102px;
+	height: 40px;
+	vertical-align: top;
+	border: 1px solid #38f;
+	border-bottom: 1px solid #2e7ae5;
+	zoom: 1;/*兼容IE*/
+}
+
+section form span input.submit_btn {
+	width: 102px;
+	height: 39px;
+	color: white;
+	font-size: 16px;
+	letter-spacing: 1px;
+	background: #38f;
+	border-bottom: 1px solid #2868c8;
+	outline: medium;
+	/*设置外观*/
+	-webkit-appearance: none;  
+	-webkit-border-radius: 0;
+}
+
+#search span input.submit_btn:hover {
+	background-color: #317ef3;
+	box-shadow: 1px 1px 1px #ccc;
+	cursor: pointer;	
+}
+
+footer {
+	display: block;
+	/*使footer始终响应式的定位于页面整体bottom上方50px处,距离顶部240px*/
+	position: absolute;
+	bottom: 50px;
+	padding-top: 240px;
+	/*需要利用margin: 0 auto;
+	实现水平居中的元素的父级元素设置text-align: center;兼容低版本浏览器bug*/
+	text-align: center;
+	width: 100%;
+	height: 310px;
+	font: 12px arial;
+	color: #999;
+	overflow: hidden;
+}
+
+footer p {
+	color: #666;
+}
+
+/*利用margin: 0 auto;可以使元素水平居中的条件
+					1.要给居中的元素一个宽度，否则无效。
+					2.该元素一定不能浮动或绝对定位，否则无效。
+					3 在HTML中使用<center></center>标签，需考虑好整体构架，
+					  否者全部元素都会居中的。
+					4.有时需要给父级元素添加text-align: center;*/
+
+/*尽量少用float,尽量多利用display: inline-block;替代float: left;*/
+footer div.ft_wrapper {
+	display: inline-block;
+	width: 647px;
+	height: 70px;
+	/*实现水平居中*/
+	/*margin: 240px auto 0;*/
+	/*不优雅的实现水平居中的方法 不过百分比宽度时比较有效
+	left: 50%;
+	transform: translate(-320px, 240px);*/
+}	
+
+footer #btm-piccode,
+footer #btm-piccode .piccode,
+footer #btm-piccode .piccode-img,
+footer #btm-piccode .piccode-text {
+	float: left;
+	display: inline-block;
+}
+
+
+footer #btm-piccode {
+	width: 277px;
+	height: 60px;
+}
+
+footer #btm-piccode .piccode {
+	width: 122px;
+	height: 60px;
+}
+
+footer #btm-piccode .piccode-img {
+	width: 60px;
+	height: 60px;
+}
+
+footer #btm-piccode .piccode-text {
+	width: 52px;
+	margin: 8px 0 0 10px;
+}
+
+footer #btm-piccode .left-img {
+	background: url('../img/shouji_baidu.png') 0 0 no-repeat;
+}
+
+footer #btm-piccode .right-img {
+	background: url('../img/nuomi_baidu.png') 0 0 no-repeat;
+}
+
+footer #btm-piccode .part-2 {
+	margin-left: 30px;
+}
+
+footer #btm_statement {
+	float: left;
+	position: relative;
+	display: inline-block;
+	width: 340px;
+	min-width: 340px;
+	height: 70px;
+	top: -6px;
+	margin-left: 30px;
+	text-align: left;
+}
+
+footer #btm_statement a,
+footer #btm_statement a:link,
+footer #btm_statement a:hover,
+footer #btm_statement a:active,
+footer #btm_statement a:visited {
+	color: #999;
+	outline: none;
+}
+
+footer #btm_statement p {
+	display: inline-block;
+	line-height: 22px;
+	vertical-align: top;
+	color: #999;
+}
+
+footer #btm_statement p:nth-child(2) {
+	word-spacing: -1px;
+	font-size: 10px;
+}
+
+footer #btm_statement .btm_nav > a:not(:nth-child(1)) {
+	margin-left: 62px;
+}
+
+footer #btm_statement p > i {
+	display: inline-block;
+	width: 14px;
+	height: 17px;
+	position: relative;
+	top: 3px;
+	overflow: hidden;
+}
+
+footer #btm_statement p > i.small_icon_1 {
+	background: url('../img/small_icons.png') -600px -96px no-repeat;
+	margin-left: -1px;
+}
+
+footer #btm_statement p > i.small_icon_2 {
+	background: url('../img/small_icons.png') -623px -96px no-repeat;
+	margin-right: 5px;
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="web前端15期1班-董鹏腾" />
+	<!-- tab-icon图标 -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/X-icon" />
+	<title>百度一下，你就知道</title>
+	<!-- 引入CSS文件 -->
+	<link rel="stylesheet" href="css/bd_index.css" />
+	
+	<!-- 引入html5.js,使IE版本兼容识别htnl5标签 -->
+	<!--[if IE]>
+		<script type="text/javascript" src="js/html5.js"></script>
+	<![endif]-->	
+	
+	<!-- 兼容IE6 -->
+	<!--[if IE 6]>
+		<style type="text/css">
+			#logo img {
+			    width: 270px;
+				height: 129px;
+			}
+
+			span {
+				behavior: url(csshover.htc);
+			}
+
+			a:link,
+			a:visited {
+				text-decoration:underline; 
+				color:#333;
+			} 
+			a:hover,
+			a:active {
+				text-decoration:underline;
+				color:#2319DC;
+			} 
+
+			.search_area {
+				_width: 100px;
+			}
+
+			.srch_text {
+				height: 100px;
+			}
+
+			nav.clearfix {
+				margin-top: 10px;
+				margin-left: 65%;
+				margin-bottom: 30px;
+			}
+
+			#more-prduct {
+				position: absolute;
+				top: 6px;
+				right: 12px;
+			}
+
+
+			div.clearfix {
+			    bottom: 30px;
+			    left: 50%;
+			    bottom:10px;
+			    margin-top:600px;
+				margin-left: -320px;
+				position: absolute;
+				overflow: hidden;
+			}
+
+			#btm_statement {
+				margin-top: 5px;
+			}
+
+			#stooltip {
+				display: none;
+				behavior: url(csshover.htc);
+			}
+
+			#stooltip:hover {
+				padding: 0;
+				behavior: url(csshover.htc);
+			}
+
+			.search_area {
+				display: block;
+				width: 500px;
+				height: 40px;
+			}
+
+			#sousuoK {
+			    display: block;
+				height: 40px;
+				line-height: 60px;
+			}
+
+			#bdonce {
+				padding:0;
+			}
+		</style>
+	<![endif]-->
+	
+</head>
+<body>
+	<!-- 页面外部包裹容器 start -->
+	<div class="wrapper">
+		<!-- header start -->
+		<header>
+			<!-- 右上角导航栏 Start -->
+			<nav class="clearfix">
+				<a href="#">糯米</a>
+				<a href="#">新闻</a>
+				<a href="#">hao123</a>
+				<a href="#">地图</a>
+				<a href="#">视频</a>
+				<a href="#">贴吧</a>
+				<a href="#" class="plain">登录</a>
+				<a href="#" class="plain" id="seting-item">设置</a>
+				<span id="more-prduct"><a href="#" class="more">更多产品</a></span>
+			</nav>
+			<!-- 右上角导航栏 End -->
+			<!-- "更多产品"右侧边导航栏 Start -->
+			<section id="sidebar-nav">
+				<aside>
+					<div class="sidebar-more">更多产品</div>
+					<div class="side-wrapper">
+						<a href="http://music.baidu.com">
+							<span class="bd-yinyue"></span>
+							音乐
+						</a>
+						<a href="http://image.baidu.com">
+							<span class="bd-tupian"></span>
+							图片
+						</a>
+						<a href="http://zhidao.baidu.com">
+							<span class="bd-zhidao"></span>
+							知道
+						</a>
+						<a href="http://wenku.baidu.com">
+							<span class="bd-wenku"></span>
+							文库
+						</a>
+						<a href="http://top.baidu.com">
+							<span class="bd-fengyunbang"></span>
+							风云榜
+						</a>
+						<a href="http://e.baidu.com">
+							<span class="bd-tuiguang"></span>
+							百度推广
+						</a>
+						<div class="sidebar-wrapper-more">
+							<a href="//www.baidu.com/more/">全部产品>></a>
+						</div>
+					</div>	
+				</aside>
+			</section>
+			<!-- "更多产品"右侧边导航栏 End -->
+		</header>
+		<!-- header end -->
+		<!-- 页面中间内容区块section start -->
+		<section>
+			<div class="mid_wrapper">
+				<div id="logo">
+					<img src="img/big-logo.png" alt="logo图片" title="百度" />
+				</div>
+				<form id="search">
+					<span class="search_area">
+						<span class="camera"></span>
+						<input type="text" class="srch_text" id="sousuoK" maxlength="100" autocomplete="off" />
+					</span><!--
+					换行会在行内元素间形成微小像素(3像素)间隔bug或紧挨着写在同一行
+				 --><span class="submit_area">
+						<input id="bdonce" type="submit" class="submit_btn" value="百度一下" />
+					</span>
+				</form>
+			</div>
+		</section>
+		<!-- 页面中间内容区块section end -->
+		<!-- footer start -->
+		<footer id="fd">
+			<!-- 底部各区块集合包裹区块 start -->
+			<div class="ft_wrapper clearfix">
+				<!-- 底部左侧两个样式相同带二维码图片的区块 start -->
+				<div id="btm-piccode">
+					<div class="piccode part-1">
+						<div class="piccode-img left-img"></div>
+						<div class="piccode-text">
+							<p>
+								<b>手机百度</b>
+							</p>
+							<p>
+								<span>快人一步</span>
+							</p>
+						</div>
+					</div>
+					<div class="piccode part-2">
+						<div class="piccode-img right-img"></div>
+						<div class="piccode-text">
+							<p>
+								<b>百度糯米</b>
+							</p>
+							<p>
+								<span>一元大餐</span>
+							</p>
+						</div>
+					</div>
+					<br clear="both" /> <!-- 清除浮动(不优雅) -->
+				</div>
+				<!-- 底部左侧两个样式相同带二维码图片的区块 end -->
+				<!-- 底部右侧链接、相关文字的区块 start -->
+				<div id="btm_statement">
+					<p class="btm_nav">
+						<a href="javascript:void(0);">将百度设为首页</a>
+						<a href="javascript:void(0);">关于百度</a>
+						<a href="javascript:void(0);">About&nbsp;&nbsp;Baidu</a>
+					</p>
+					<p class="dsc">
+						@2016&nbsp;Baidu&nbsp;
+						<a href="javascript:void(0);">使用百度前必读&nbsp;</a>
+						<a href="javascript:void(0);">意见反馈&nbsp;</a>
+						京ICP证030173号&nbsp;
+						<i class="small_icon_1"></i>
+					</p>
+					<p class="record">
+						<i class="small_icon_2"></i>
+						京公网安备11000002000001号
+					</p>
+				</div>
+				<!-- 底部右侧链接、相关文字的区块 end -->
+			</div>
+			<!-- 底部各区块集合包裹区块 end -->
+		</footer>
+
+		<!-- footer end -->
+		<!-- "设置"响应的toolTip菜单栏 Start -->
+		<div class="setingtooltip" id="stooltip">
+			<a href="javascript:void(0);">搜索设置</a>
+			<a href="//www.baidu.com/gaoji/advanced.html">高级搜索</a>
+			<a href="javascript:void(0);">关闭预测</a>
+			<a href="javascript:void(0);">搜索历史</a>
+		</div>
+		<!-- "设置"响应的toolTip菜单栏 End -->
+	</div>
+	<!-- 引入javascript文件 -->
+	<script type="text/javascript" src="js/bd_index.js"></script>
+</body>
+</html>
