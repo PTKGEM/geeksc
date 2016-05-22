@@ -1,0 +1,1295 @@
+html,
+body,
+div {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body,
+div.wrapper {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+body,
+div.wrapper {
+	position: relative;
+	background-color: #0099FF;
+	background-image: -webkit-linear-gradient(to bottom, #0099FF, #000066 90%);
+	background-image: linear-gradient(to bottom, #0099FF, #000066 90%);	
+	/*置于最底层防止遮盖其他部分*/
+	z-index: -9;
+}
+
+div {
+	/*设置div为怪异盒子模型布局*/
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*绿色海底陆地*/
+div.wrapper div.land {
+	width: 1600px;
+	height: 260px;
+	position: absolute;
+	top: 450px;
+	left: 50%;
+	margin-left: -800px;
+	background-color: #009933;
+	border: 2px solid #000;
+	border-radius: 50% 50% 0 0;
+	z-index: -6;
+}
+
+.Sponge-body {
+	width: 270px;
+	height: 340px;
+	position: relative;
+	top: 80px;
+	margin: auto;
+	border: 5px solid #000;
+}
+
+.Sponge-body .face {
+	width: 100%;
+	height: 240px;
+	position: relative;
+	/*海绵宝宝黄色身体颜色*/
+	background-color: #f5ee36;
+	overflow: hidden;
+	z-index: 9;
+}
+
+.Sponge-body .face .eyes {
+	width: 204px;
+	height: 100px;
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	margin-left: -100px;
+}
+
+.Sponge-body .face .eyes .left-eye,
+.Sponge-body .face .eyes .right-eye {
+	width: 96px;
+	height: 96px;
+	display: inline-block;
+	border: 5px solid #000;
+	border-radius: 50%;
+	background-color: #fff;
+	position: relative;
+	/*眼睛瞪大动画*/
+	-moz-animation: blink 3s ease-in-out infinite;
+	-webkit-animation: blink 3s ease-in-out infinite;
+	animation: blink 3s ease-in-out infinite;
+}
+/*眼睛瞪大动画*/
+@-moz-keyframes blink {
+	0% {
+		width: 96px;
+	    height: 96px;
+	}
+
+	50% {
+	    width: 98px; 
+	    height: 102px;
+	}
+
+	100% {
+	    width: 96px; 
+	    height: 96px;
+	}
+}
+@-webkit-keyframes blink {
+	0% {
+		width: 96px;
+	    height: 96px;
+	}
+
+	50% {
+	    width: 98px; 
+	    height: 102px;
+	}
+
+	100% {
+	    width: 96px; 
+	    height: 96px;
+	}
+}
+
+.Sponge-body .face .eyes .left-eye {
+	left: 10px;
+}
+.Sponge-body .face .eyes .right-eye {
+	right: 10px;
+}
+/*睫毛 Start*/
+.Sponge-body .face .eyes .brow {
+	width: 15px;
+	height: 5px;
+	position: relative;
+	top: -14px;
+	display: inline-block;
+	margin-left: 5px;
+	background: #000;
+}
+.Sponge-body .face .eyes .brow-left {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.Sponge-body .face .eyes .brow-center {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	top: -20px;
+}
+.Sponge-body .face .eyes .brow-right {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	/*避免火狐浏览器下错位问题*/
+	z-index: -1;
+}
+/*睫毛 End*/
+/*蓝色眼球 Start*/
+.Sponge-body .face .eyes .eyeball {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -25px;
+	margin-top: -25px;
+	border: 3px solid #000;
+	border-radius: 50%;
+	background-color: #00aeef;
+	/*蓝色眼球向左移动*/
+	-moz-animation: eyeball-turnleft 3s ease-in-out infinite;
+	-webkit-animation: eyeball-turnleft 3s ease-in-out infinite;
+	animation: eyeball-turnleft 3s ease-in-out infinite;
+}
+/*蓝色眼球向左移动*/
+@-moz-keyframes eyeball-turnleft {
+	0% {
+		margin-left: -25px;
+	}
+
+	50% {
+	   margin-left: -15px;
+	}
+
+	100% {
+	    margin-left: -25px;
+	}
+}
+@-webkit-keyframes eyeball-turnleft {
+	0% {
+		margin-left: -25px;
+	}
+
+	50% {
+	   margin-left: -15px;
+	}
+
+	100% {
+	    margin-left: -25px;
+	}
+}
+/*蓝色眼球 End*/
+/*黑色瞳孔 Start*/
+.Sponge-body .face .eyes .eyeball .eyepupil {
+	width: 30px;
+	height: 30px;
+	background-color: #000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -15px;
+	margin-top: -15px;
+	border-radius: 50%;
+	/*黑色瞳孔向左移动*/
+	-moz-animation: eyepupil-turnleft 3s ease-in-out infinite;
+	-webkit-animation: eyepupil-turnleft 3s ease-in-out infinite;
+	animation: eyepupil-turnleft 3s ease-in-out infinite;
+}
+/*黑色瞳孔向左移动*/
+@-moz-keyframes eyepupil-turnleft {
+	0% {
+		margin-left: -15px;
+		margin-top: -15px;
+	}
+
+	50% {
+	   margin-left: -8px;
+	   margin-top: -10px;
+	}
+
+	100% {
+	    margin-left: -15px;
+	    margin-top: -15px;
+	}
+}
+@-webkit-keyframes eyepupil-turnleft {
+	0% {
+		margin-left: -15px;
+		margin-top: -15px;
+	}
+
+	50% {
+	   margin-left: -8px;
+	   margin-top: -10px;
+	}
+
+	100% {
+	    margin-left: -15px;
+	    margin-top: -15px;
+	}
+}
+/*黑色瞳孔 End*/
+/*鼻子 Start*/
+.Sponge-body .face .nose {
+	width: 30px;
+	height: 50px;
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	margin-left: -15px;
+	border: 5px solid #000;
+	border-bottom-color: transparent;
+	border-radius: 45%;
+	background-color: #f5ee36;
+}
+/*鼻子 End*/
+/*嘴 Start*/
+.Sponge-body .face .mouth {
+	width: 170px;
+	height: 80px;
+	position: absolute;
+	top: 104px;
+	left: 50%;
+	margin-left: -85px;
+	border-bottom: 5px solid #000;
+	border-radius: 30%;
+	/*微笑嘴角上扬动画*/
+	-moz-animation: smile 3s linear infinite;
+	-webkit-animation: smile 3s linear infinite;
+	animation: smile 3s linear infinite;
+}
+/*微笑嘴角上扬动画*/
+@-moz-keyframes smile {
+	0% {
+		border-radius: 30%;
+	}
+
+	50% {
+	    border-radius: 50%;
+	}
+
+	100% {
+	    border-radius: 30%;
+	}
+}
+@-webkit-keyframes smile {
+	0% {
+		border-radius: 30%;
+	}
+
+	50% {
+	    border-radius: 50%;
+	}
+
+	100% {
+	    border-radius: 30%;
+	}
+}
+/*嘴 End*/
+/*脸颊 Start*/
+.Sponge-body .face .mouth .cheek {
+	width: 34px;
+	height: 22px;
+	position: absolute;
+	top: 30px;
+	border: 3px solid #f1592a;
+	border-bottom-color: transparent; 
+	border-radius: 50% 50% 20% 20%;
+}
+
+.Sponge-body .face .mouth .left-cheek {
+	left: -12px;
+}
+.Sponge-body .face .mouth .right-cheek {
+	right: -12px;
+}
+/*利用伪元素制作脸颊上泛起的红点*/
+.Sponge-body .face .mouth .left-cheek::before,
+.Sponge-body .face .mouth .left-cheek::after,
+.Sponge-body .face .mouth .right-cheek::before,
+.Sponge-body .face .mouth .right-cheek::after {
+	content: "";
+	display: block;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.Sponge-body .face .mouth .left-cheek::before,
+.Sponge-body .face .mouth .right-cheek::before {
+	width: 10px;
+	height: 0;
+	top: 3px;
+	/*利用border的top/bottom透明 && left/right着色一并制作脸颊上方两个红点*/
+	border: 4px solid transparent;
+	/*微笑时脸颊泛起的上边两个红点动画*/
+	-moz-animation: smile-redspot-tp 3s linear infinite;
+	-webkit-animation: smile-redspot-tp 3s linear infinite;
+	animation: smile-redspot-tp 3s linear infinite;
+}
+.Sponge-body .face .mouth .left-cheek::before {
+	left: 5px;
+}
+.Sponge-body .face .mouth .right-cheek::before {
+	right: 5px;
+}
+/*微笑时脸颊泛起的上边两个红点动画*/
+@-moz-keyframes smile-redspot-tp {
+	0% {
+		border: 4px solid transparent;	
+	}
+	/*利用border的top/bottom透明 && left/right着色一并制作脸颊上方两个红点*/
+	60% {
+	    border: 4px solid #f1592a;
+	    border-top-color: transparent;
+		border-bottom-color: transparent;
+	}
+
+	90% {
+	    border: 4px solid #f1592a;
+	    border-top-color: transparent;
+		border-bottom-color: transparent;
+	}
+
+	100% {
+	    border: 4px solid transparent;
+	}
+}
+@-webkit-keyframes smile-redspot-tp {
+	0% {
+		border: 4px solid transparent;	
+	}
+	/*利用border的top/bottom透明 && left/right着色一并制作脸颊上方两个红点*/
+	60% {
+	    border: 4px solid #f1592a;
+	    border-top-color: transparent;
+		border-bottom-color: transparent;
+	}
+
+	90% {
+	    border: 4px solid #f1592a;
+	    border-top-color: transparent;
+		border-bottom-color: transparent;
+	}
+
+	100% {
+	    border: 4px solid transparent;
+	}
+}
+
+.Sponge-body .face .mouth .left-cheek::after,
+.Sponge-body .face .mouth .right-cheek::after {
+	width: 3px;
+	height: 3px;
+	top: 10px;
+	background-color: #f1592a;
+	/*微笑时脸颊泛起的下边一个红点动画*/
+	-moz-animation: smile-redspot-btm 3s linear infinite;
+	-webkit-animation: smile-redspot-btm 3s linear infinite;
+	animation: smile-redspot-btm 3s linear infinite;
+}
+.Sponge-body .face .mouth .left-cheek::after {
+	left: 12px;
+}
+.Sponge-body .face .mouth .right-cheek::after {
+	right: 12px;
+}
+/*微笑时脸颊泛起的下边一个红点动画*/
+@-moz-keyframes smile-redspot-btm {
+	0% {
+		background-color: transparent;
+	}
+
+	60% {
+	    background-color: #f1592a;
+	}
+
+	90% {
+	    background-color: #f1592a;
+	}
+
+	100% {
+	    background-color: transparent;
+	}
+}
+@-webkit-keyframes smile-redspot-btm {
+	0% {
+		background-color: transparent;
+	}
+
+	60% {
+	    background-color: #f1592a;
+	}
+
+	90% {
+	    background-color: #f1592a;
+	}
+
+	100% {
+	    background-color: transparent;
+	}
+}
+/*脸颊 End*/
+/*牙齿 Start*/
+.Sponge-body .face .mouth .teeth {
+	width: 50px;
+	height: auto;
+	position: absolute;
+	top: 75px;
+	left: 50%;
+	margin-left: -25px;
+	font-size: 0;
+}
+
+.Sponge-body .face .mouth .teeth .left-tooth,
+.Sponge-body .face .mouth .teeth .right-tooth {
+	width: 20px;
+	height: 20px;
+	border: 4px solid #000;
+	display: inline-block;
+	background-color: #fff;
+}
+.Sponge-body .face .mouth .teeth .right-tooth {
+	margin-left: 10px;
+}
+/*牙齿 End*/
+/*腰带 Start*/
+.Sponge-body .face .pore-s-one,
+.Sponge-body .face .pore-s-two,
+.Sponge-body .face .pore-m-one,
+.Sponge-body .face .pore-m-two,
+.Sponge-body .face .pore-l-one,
+.Sponge-body .face .pore-l-two {
+	position: absolute;
+	border-radius: 50%;
+	background-color: #c3a402;
+}
+/*腰带 End*/
+/*脸上的斑点 Start*/
+.Sponge-body .face .pore-s-one,
+.Sponge-body .face .pore-s-two {
+	width: 18px;
+	height: 18px;
+}
+.Sponge-body .face .pore-s-one {
+	top: 40px;
+	right: 15px;
+}
+.Sponge-body .face .pore-s-two {
+	top: 200px;
+	right: 40px;
+}
+
+.Sponge-body .face .pore-m-one,
+.Sponge-body .face .pore-m-two {
+	width: 30px;
+	height: 30px;
+}
+.Sponge-body .face .pore-m-one {
+	top: 170px;
+	left: 20px;
+}
+.Sponge-body .face .pore-m-two {
+	top: -5px;
+	right: 20px;
+}
+
+.Sponge-body .face .pore-l-one,
+.Sponge-body .face .pore-l-two {
+	width: 40px;
+	height: 40px;
+}
+.Sponge-body .face .pore-l-one {
+	top: 3px;
+	left: 3px;
+}
+.Sponge-body .face .pore-l-two {
+	top: 110px;
+	right: -15px;
+}
+/*脸上的斑点 End*/
+/*左胳膊&&右胳膊 Start*/
+.Sponge-body .left-arm .sleeve {
+	width: 80px;
+	height: 50px;
+	position: absolute;
+	top: 145px;
+	left: -42px;
+	background-color: #fff;
+	border: 5px solid #000;
+	border-radius: 20% 30% 30% 25%;
+	-webkit-transform: rotate(-60deg);
+	-moz-transform: rotate(-60deg);
+	transform: rotate(-60deg);
+	z-index: -1;
+}
+.Sponge-body .right-arm .sleeve {
+	width: 80px;
+	height: 50px;
+	position: absolute;
+	top: 145px;
+	right: -42px;
+	background-color: #fff;
+	border: 5px solid #000;
+	border-radius: 30% 20% 25% 30%;
+	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	transform: rotate(60deg);
+	z-index: -1;
+}
+
+.Sponge-body .left-arm .arm,
+.Sponge-body .right-arm .arm {
+	width: 16px;
+	height: 80px;
+	position: absolute;
+	top: 198px;
+	border: 3px solid #000;
+	border-bottom-color: #f5ee36; 
+	background-color: #f5ee36;
+	z-index: -2;
+}
+.Sponge-body .left-arm .arm {
+	left: -45px;
+	-webkit-transform: rotate(28deg);
+	-moz-transform: rotate(28deg);
+	transform: rotate(28deg);
+}
+.Sponge-body .right-arm .arm {
+	right: -45px;
+	-webkit-transform: rotate(-28deg);
+	-moz-transform: rotate(-28deg);
+	transform: rotate(-28deg);
+}
+/*左胳膊动画 Start*/
+.Sponge-body .left-arm {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 10px;
+	left: 0;
+	-webkit-transform-origin: center bottom;
+	-moz-transform-origin: center bottom;
+	transform-origin: center bottom;
+
+	-webkit-transform: rotateZ(0deg);
+	-moz-transform: rotateZ(0deg);
+	transform: rotateZ(0deg);
+	z-index: -1;
+	/*左臂摆动动画*/
+	-moz-animation: wave-leftarm 3s ease-in-out infinite;
+	-webkit-animation: wave-leftarm 3s ease-in-out infinite;
+	animation: wave-leftarm 3s ease-in-out infinite;
+}
+/*左臂摆动动画*/
+@-moz-keyframes wave-leftarm {
+	0% {
+		-moz-transform: rotateZ(0deg);
+	 	transform: rotateZ(0deg);
+	}
+
+	25% {
+		-moz-transform: rotateZ(-3deg);
+		transform: rotateZ(-3deg);
+	}	
+
+	50% {
+		-moz-transform: rotateZ(20deg);
+	    transform: rotateZ(20deg);
+	}
+
+    100% {
+		-moz-transform: rotateZ(0deg);
+		transform: rotateZ(0deg);
+	}
+}
+@-webkit-keyframes wave-leftarm {
+	0% {
+		-webkit-transform: rotateZ(0deg);
+	 	transform: rotateZ(0deg);
+	}
+
+	25% {
+		-webkit-transform: rotateZ(-3deg);
+		transform: rotateZ(-3deg);
+	}	
+
+	50% {
+
+	    transform: rotateZ(20deg);
+	}
+
+    100% {
+    	-webkit-transform: rotateZ(0deg);
+		transform: rotateZ(0deg);
+	}
+}
+/*左胳膊动画 End*/
+
+.Sponge-body .left-arm .plam,
+.Sponge-body .right-arm .plam {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 265px;
+	border: 3px solid #000;
+	border-radius: 30% 50% 50% 30%;
+	border-left-color: #f5ee36; 
+	background-color: #f5ee36;
+	z-index: -3;
+}
+.Sponge-body .left-arm .plam {
+	left: -82px;
+	-webkit-transform: rotate(-60deg);
+	-moz-transform: rotate(-60deg);
+	transform: rotate(-60deg);
+}
+.Sponge-body .right-arm .plam {
+	right: -82px;
+	height: 45px;
+	-webkit-transform: rotate(-120deg);
+	-moz-transform: rotate(-120deg);
+	transform: rotate(-120deg);
+}
+/*右胳膊动画 Start*/
+.Sponge-body .right-arm {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 10px;
+	right: 0;
+	-webkit-transform-origin: center bottom;
+	-moz-transform-origin: center bottom;
+	transform-origin: center bottom;
+
+	-webkit-transform: rotateZ(0deg);
+	-moz-transform: rotateZ(0deg);
+	transform: rotateZ(0deg);
+	z-index: -1;
+	/*右臂摆动动画*/
+	-moz-animation: wave-rightarm 3s ease-in-out infinite;
+	-webkit-animation: wave-rightarm 3s ease-in-out infinite;
+	animation: wave-rightarm 3s ease-in-out infinite;
+}
+/*右臂摆动动画*/
+@-moz-keyframes wave-rightarm {
+	0% {
+	 	-moz-transform: rotateZ(0deg);
+	 	transform: rotateZ(0deg);
+	}
+
+	25% {
+	 	-moz-transform: rotateZ(3deg);
+	 	transform: rotateZ(3deg);
+	}	
+
+	50% {
+	 	-moz-transform: rotateZ(-20deg);
+	 	transform: rotateZ(-20deg);
+	}
+
+    100% {
+	 	-moz-transform: rotateZ(0deg);
+	 	transform: rotateZ(0deg);
+	}
+}
+@-webkit-keyframes wave-rightarm {
+	0% {
+	 	-webkit-transform: rotateZ(0deg);
+	 	transform: rotateZ(0deg);
+	}
+
+	25% {
+		-webkit-transform: rotateZ(3deg);
+	 	transform: rotateZ(3deg);
+	}	
+
+	50% {
+	    -webkit-transform: rotateZ(-20deg);
+	 	transform: rotateZ(-20deg);
+	}
+
+    100% {
+		-webkit-transform: rotateZ(0deg);
+	 	transform: rotateZ(0deg);
+	}
+}
+/*右胳膊动画 End*/
+/*左胳膊&&右胳膊 End*/
+/*网兜 Start*/
+.Sponge-body .right-arm .pole {
+	width: 16px;
+	height: 200px;
+	position: absolute;
+	top: 175px;
+	right: -78px;
+	background-color: #663311;
+	border: 3px solid #330000;
+	border-bottom-width: 8px;
+	border-top-width: 8px;
+	border-radius: 25%;
+	-webkit-transform: rotate(35deg);
+	-moz-transform: rotate(35deg);
+	transform: rotate(35deg);
+	z-index: -3;
+}
+.Sponge-body .right-arm .pole::before,
+.Sponge-body .right-arm .pole::after {
+	content: "";
+	width: 18px;
+	height: 12px;
+	display: block;
+	position: absolute;
+	background-color: #330000;
+	border-radius: 50%;
+}
+.Sponge-body .right-arm .pole::before {
+	top: 140px;
+	left: -4px;
+}
+.Sponge-body .right-arm .pole::after {
+	top: 50px;
+	left: -4px;
+}
+
+
+.Sponge-body .right-arm .pole .pole-circle {
+	width: 140px;
+	height: 140px;
+	position: absolute;
+	top: -145px;
+	left: -68px;
+	background-color: #663311; 
+	border: 3px solid #330000;
+	border-radius: 50%;
+	-webkit-transform: rotateY(45deg);
+	-moz-transform: rotateY(45deg);
+	transform: rotateY(45deg);
+}
+/*圆圈内的浮动网线*/
+.Sponge-body .right-arm .pole .pole-circle .pole-hole {
+	width: 130px;
+	height: 120px;
+	position: absolute;
+	top: -8px;
+	left: -10px;
+	background: #0088cc;
+	/*利用渐变背景设置窄的白色实线(网线)&&宽的透明色transparent(网格间距)*/
+	background-image: 
+			linear-gradient(white 2px, transparent 0),
+			linear-gradient(90deg, white 2px, transparent 0); 
+	background-size: 36px 20px;
+	border: 1px solid transparent;
+	border-radius: 50%;
+	-webkit-transform: rotateY(45deg);
+	-moz-transform: rotateY(45deg);
+	transform: rotateY(45deg);
+	/*网兜浮动动画*/
+	-moz-animation: floatnet 1.5s ease-in-out infinite;
+	-webkit-animation: floatnet 1.5s ease-in-out infinite;
+	animation: floatnet 1.5s ease-in-out infinite;	
+}
+/*利用背景透明&&边框不透明的的div遮罩覆盖着的扭动的圆圈内的网线*/
+.Sponge-body .right-arm .pole .pole-circle .pole-hole-shelter {
+	width: 120px;
+	height: 110px;
+	position: absolute;
+	top: 14px;
+	left: 6px;
+	background: transparent;
+	border: 3px solid #330000;
+	border-radius: 50%;
+	-webkit-transform: rotateY(45deg);
+	-moz-transform: rotateY(45deg);
+	transform: rotateY(45deg);
+	overflow: hidden;
+}
+/*圆圈外外网线*/
+.Sponge-body .right-arm .pole .pole-net {
+	width: 140px;
+	height: 120px;
+	position: absolute;
+	top: -136px;
+	left: -40px;
+	background: #0088cc;
+	background-image: 
+			linear-gradient(white 2px, transparent 0),
+			linear-gradient(90deg, white 2px, transparent 0); 
+	background-size: 30px 20px;
+	border: 2px solid white;
+	border-radius: 50%;
+	-webkit-transform: rotateY(-45deg);
+	-moz-transform: rotateY(-45deg);
+	transform: rotateY(-45deg);
+	z-index: -1;
+	/*网兜浮动动画*/
+	-moz-animation: floatnet 1.5s ease-in-out infinite;
+	-webkit-animation: floatnet 1.5s ease-in-out infinite;
+	animation: floatnet 1.5s ease-in-out infinite;
+}
+/*网兜浮动动画*/
+@-moz-keyframes floatnet {
+	/*利用transform: skewX(deg);扭曲效果模拟网兜随着还睡浮动*/
+	0% {
+		-moz-transform: skewX(0deg);
+		transform: skewX(0deg);
+	}
+	40% {
+		-moz-transform: skewX(10deg);
+		transform: skewX(10deg);
+	}
+	70% {
+		-moz-transform: skewX(-10deg);
+		transform: skewX(-10deg);
+	}
+	100% {
+		-moz-transform: skewX(0deg);
+		transform: skewX(0deg);
+	}
+}
+@-webkit-keyframes floatnet {
+	/*利用transform: skewX(deg);扭曲效果模拟网兜随着还睡浮动*/
+	0% {
+		-webkit-transform: skewX(0deg);
+		transform: skewX(0deg);
+	}
+	40% {
+		-webkit-transform: skewX(10deg);
+		transform: skewX(10deg);
+	}
+	70% {
+		-webkit-transform: skewX(-10deg);
+		transform: skewX(-10deg);
+	}
+	100% {
+		-webkit-transform: skewX(0deg);
+		transform: skewX(0deg);
+	}
+}
+/*网兜 End*/
+/*手掌&&手指 Start*/
+/*左手指两根稍短的(两边两根)利用伪元素制作*/
+.Sponge-body .left-arm .plam::before,
+.Sponge-body .left-arm .plam::after {
+	content: "";
+	display: block;
+	position: absolute;
+	border: 3px solid #000;
+	border-bottom-color: #f5ee36;
+	border-radius: 40% 40% 20% 20%;
+	background-color: #f5ee36;	
+}
+.Sponge-body .left-arm .plam::before {
+	width: 9px;
+	height: 25px;
+	top: -22px;
+	left: -12px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.Sponge-body .left-arm .plam::after {
+	width: 8px;
+	height: 20px;
+	top: 26px;
+	left: -14px;
+	-webkit-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+}
+/*左手指两根较长的(中间两根)利用实际div制作*/
+.Sponge-body .left-arm .plam .long-finger-one,
+.Sponge-body .left-arm .plam .long-finger-two {
+	width: 14px;	
+	position: absolute;	
+	border: 3px solid #000;
+	border-bottom-color: #f5ee36;
+	border-radius: 40% 40% 20% 20%;
+	background-color: #f5ee36;	
+}
+.Sponge-body .left-arm .plam .long-finger-one {
+	height: 50px;
+	top: -18px;
+	left: -30px;
+	-webkit-transform: rotate(-75deg);
+	-moz-transform: rotate(-75deg);
+	transform: rotate(-75deg);
+}
+.Sponge-body .left-arm .plam .long-finger-two {
+	height: 40px;
+	top: 5px;
+	left: -26px;
+	-webkit-transform: rotate(-95deg);
+	-moz-transform: rotate(-95deg);
+	transform: rotate(-95deg);
+}
+/*右手指是实际的div制作(避免遮罩)*/
+.Sponge-body .right-arm .long-finger-one,
+.Sponge-body .right-arm .long-finger-two,
+.Sponge-body .right-arm .long-finger-three,
+.Sponge-body .right-arm .long-finger-four {
+	width: 15px;	
+	position: absolute;	
+	border: 3px solid #000;
+	border-radius: 30% 30% 40% 40%;
+	background-color: #f5ee36;
+}
+.Sponge-body .right-arm .long-finger-one {
+	height: 28px;
+	top: 258px;
+	right: -80px;
+	border-radius: 40% 40% 30% 30%;
+	border-bottom-color: #f5ee36;
+	-webkit-transform: rotate(88deg);
+	-moz-transform: rotate(88deg);
+	transform: rotate(88deg);
+}
+.Sponge-body .right-arm .long-finger-two {
+	height: 40px;
+	top: 275px;
+	right: -76px;
+	-webkit-transform: rotate(145deg);
+	-moz-transform: rotate(145deg);
+	transform: rotate(145deg);
+}
+.Sponge-body .right-arm .long-finger-three {
+	height: 30px;
+	top: 272px;
+	right: -86px;
+	-webkit-transform: rotate(140deg);
+	-moz-transform: rotate(140deg);
+	transform: rotate(140deg);
+}
+.Sponge-body .right-arm .long-finger-four {
+	height: 25px;
+	top: 290px;
+	right: -65px;
+	-webkit-transform: rotate(155deg);
+	-moz-transform: rotate(155deg);
+	transform: rotate(155deg);
+}
+/*手掌&&手指 End*/
+/*白色上衣衬衫 Start*/
+.Sponge-body .shirt {
+	width: 100%;
+	height: 40px;
+	border-top: 5px solid #000;
+	background-color: #fff;
+	position: relative;
+	overflow: hidden;
+}
+/*利用伪元素制作两个领子*/
+.Sponge-body .shirt::before,
+.Sponge-body .shirt::after {
+	content: "";
+	width: 50px;
+	height: 30px;
+	position: absolute;
+	border: 5px solid #000;
+	background-color: #fff;
+	top: -25px;
+}
+.Sponge-body .shirt::before {
+	left: 50px;
+	-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	transform: rotate(30deg);
+}
+.Sponge-body .shirt::after {
+	right: 50px;
+	-webkit-transform: rotate(-30deg);
+	-moz-transform: rotate(-30deg);
+	transform: rotate(-30deg);
+}
+/*红色领带*/
+.Sponge-body .shirt .tie-top,
+.Sponge-body .tie-bottom {
+	position: absolute;
+	border: 5px solid #000;
+	background-color: red;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.Sponge-body .shirt .tie-top {
+	top: -20px;
+	left: 50%;
+	margin-left: -18px;
+	width: 36px;
+	height: 36px;
+}
+.Sponge-body .tie-bottom {
+	top: 270px;
+	left: 50%;
+	margin-left: -25px;
+	width: 50px;
+	height: 50px;
+	z-index: 8;
+}
+/*白色上衣衬衫 End*/
+/*裤子 Start*/
+.Sponge-body .pant {
+	width: 100%;
+	height: 50px;
+	position: relative;
+	border-top: 5px solid #000;
+	background-color: #bd7718;
+	font-size: 0;
+}
+
+.Sponge-body .pant .belt {
+	width: 45px;
+	height: 12px;
+	display: inline-block;
+	margin:10px;
+	background-color: #000;
+}
+
+.Sponge-body .pant .trouser-left,
+.Sponge-body .pant .trouser-right {
+	width: 50px;
+	height: 24px;
+	position: absolute;
+	border: 5px solid #000;
+	background-color: #bd7718;
+	border-radius: 0 0 20% 20%;
+	top: 45px;
+	
+}
+.Sponge-body .pant .trouser-left {
+	left: 40px;
+}
+.Sponge-body .pant .trouser-right {
+	right: 40px;
+}
+/*裤子 End*/
+/*腿 Start*/
+.Sponge-body .left-leg,
+.Sponge-body .right-leg {
+	width: 16px;
+	height: 70px;
+	position: absolute;
+	top: 350px;
+	border: 3px solid #000;
+	background-color: #f5ee36;
+	z-index: 9;
+}
+.Sponge-body .left-leg {
+	left: 58px;
+}
+.Sponge-body .right-leg {
+	right: 58px; 
+}
+
+.Sponge-body .left-leg .socks,
+.Sponge-body .right-leg .socks {
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	bottom: 0;
+	border-top: 3px solid #000;
+	background-color: #fff;
+}
+/*利用伪元素制作袜子上的红蓝条纹*/
+.Sponge-body .left-leg .socks::before,
+.Sponge-body .right-leg .socks::before,
+.Sponge-body .left-leg .socks::after,
+.Sponge-body .right-leg .socks::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 5px;
+	position: absolute;
+}
+.Sponge-body .left-leg .socks::before,
+.Sponge-body .right-leg .socks::before {
+	top: 5px;
+	background-color: blue;
+}
+.Sponge-body .left-leg .socks::after,
+.Sponge-body .right-leg .socks::after {
+	top: 14px;
+	background-color: red;
+}
+/*鞋子 Start*/
+.Sponge-body .left-leg .left-shoe,
+.Sponge-body .right-leg .right-shoe {
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 60px;	
+	z-index: -1;
+}
+.Sponge-body .left-leg .left-shoe {
+	left: -42px;
+}
+.Sponge-body .right-leg .right-shoe {
+	right: -42px;
+}
+
+.Sponge-body .left-leg .left-shoe .shoe-head,
+.Sponge-body .right-leg .right-shoe .shoe-head {
+	width: 40px;
+	height: 40px;
+	background-color: #000;
+}
+.Sponge-body .left-leg .left-shoe .shoe-head {
+	border-radius: 40% 50% 35% 50%;
+}
+.Sponge-body .right-leg .right-shoe .shoe-head {
+	border-radius: 50% 40% 50% 35%;
+}
+
+.Sponge-body .left-leg .left-shoe .shoe-head::before,
+.Sponge-body .left-leg .left-shoe .shoe-head::after,
+.Sponge-body .right-leg .right-shoe .shoe-head::before,
+.Sponge-body .right-leg .right-shoe .shoe-head::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 5px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+.Sponge-body .left-leg .left-shoe .shoe-head::before,
+.Sponge-body .left-leg .left-shoe .shoe-head::after {
+	left: 15px;
+	-webkit-transform: rotate(-30deg);
+	-moz-transform: rotate(-30deg);
+	transform: rotate(-30deg);
+}
+.Sponge-body .right-leg .right-shoe .shoe-head::before,
+.Sponge-body .right-leg .right-shoe .shoe-head::after {
+	right: 15px;
+	-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	transform: rotate(30deg);
+}
+
+.Sponge-body .left-leg .left-shoe .shoe-head::before {
+	width: 10px;
+	height: 15px;
+	top: 5px;
+}
+.Sponge-body .left-leg .left-shoe .shoe-head::after {
+	width: 10px;
+	height: 10px;
+	top: -2px;
+	left: 42px;
+}
+
+.Sponge-body .right-leg .right-shoe .shoe-head::before {
+	width: 10px;
+	height: 15px;
+	top: 5px;
+}
+.Sponge-body .right-leg .right-shoe .shoe-head::after {
+	width: 10px;
+	height: 10px;
+	top: -2px;
+	right: 42px;
+}
+
+
+.Sponge-body .left-leg .left-shoe .shoe-body,
+.Sponge-body .right-leg .right-shoe .shoe-body {
+	width: 50px;
+	height: 30px;
+	border: 2px solid #000;
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+.Sponge-body .left-leg .left-shoe .shoe-body {
+	border-radius: 50% 40% 40% 30%;
+	left: 15px;
+	-webkit-transform: rotate(-40deg);
+	-moz-transform: rotate(-40deg);
+	transform: rotate(-40deg);
+}
+.Sponge-body .right-leg .right-shoe .shoe-body {
+	border-radius: 40% 50% 30% 40%;
+	right: 15px;
+	-webkit-transform: rotate(40deg);
+	-moz-transform: rotate(40deg);
+	transform: rotate(40deg);
+}
+
+.Sponge-body .left-leg .left-shoe .shoe-body::before,
+.Sponge-body .left-leg .left-shoe .shoe-body::after,
+.Sponge-body .right-leg .right-shoe .shoe-body::before,
+.Sponge-body .right-leg .right-shoe .shoe-body::after {
+	content: "";
+	display: block;
+	position: absolute;	
+}
+.Sponge-body .left-leg .left-shoe .shoe-body::before,
+.Sponge-body .right-leg .right-shoe .shoe-body::before {
+	width: 24px;
+	height: 24px;
+	top: 12px;
+	background-color: #000;
+	z-index: 1;
+}
+.Sponge-body .left-leg .left-shoe .shoe-body::before {
+	left: 16px;
+	border-radius: 0 30% 0 30%;
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	transform: rotate(10deg);
+}
+.Sponge-body .right-leg .right-shoe .shoe-body::before {
+	right: 16px;
+	border-radius: 30% 0 30% 0;
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+
+.Sponge-body .left-leg .left-shoe .shoe-body::after,
+.Sponge-body .right-leg .right-shoe .shoe-body::after {
+	width: 0;
+	height: 0;
+	top: 26px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent;
+	border-bottom-color: #aaa;
+	-webkit-transform: rotate(168deg);
+	-moz-transform: rotate(168deg);
+	transform: rotate(168deg);
+	z-index: 9;
+}
+.Sponge-body .left-leg .left-shoe .shoe-body::after {
+	left: 20px;
+}
+.Sponge-body .right-leg .right-shoe .shoe-body::after {
+	right: 20px;
+	-webkit-transform: rotate(-168deg);
+	-moz-transform: rotate(-168deg);
+	transform: rotate(-168deg);
+}
+/*鞋子 End*/
+/*腿 End*/
