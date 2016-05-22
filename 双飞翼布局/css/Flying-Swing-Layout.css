@@ -1,0 +1,83 @@
+html,
+body,
+div.page {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+/*设置div内字体样式*/
+div {
+	color: #fff;
+	text-align: center;
+	text-transform: capitalize;
+	font: italic small-caps bolder 40px/1.5em Arial;
+}
+/*Header头部样式*/
+div.page div#hd {
+	width: 100%;
+	height: 80px;
+	/*设置页面最小宽度800px*/
+	min-width: 800px;
+	background-color: #FF9999;
+}
+/*Middle中间部分样式*/
+div.page div#md {
+	width: 100%;
+	min-width: 800px;
+	overflow: hidden;
+}
+/*清楚浮动*/
+div.page div#md::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	_zoom: 1; /*兼容IE*/
+}
+/*Footer底部样式*/
+div.page div#ft {
+	width: 100%;
+	height: 100px;
+	min-width: 800px;
+	background-color: #CCFF66;
+}
+/*双飞翼中间主体内容样式*/
+div#md div.main {
+	float: left;
+	width: 100%;
+	/*不设置固定heght*/
+	/*设置padding-bottom: 9999px;&&margin-bottom: -9999px;使块自适应高度*/
+	padding-bottom: 9999px;
+	margin-bottom: -9999px;
+	background-color: yellow;
+}
+/*双飞翼中间主体展示内容样式*/
+div#md div.main div.main-content {
+	/*设置中间主题内容区域左右margin比sub和extra大2%产生间距*/
+	margin: 2%;
+	margin-left: 32%;
+	margin-right: 22%;
+	border: 3px solid #fff;
+}
+/*左边栏样式*/
+div#md div.sub {
+	float: left;
+	/*设置百分比宽度使块宽度自适应*/
+	width: 30%;
+	padding-bottom: 9999px;
+	margin-bottom: -9999px;
+	margin-left: -100%; /*使元素上浮到最左边*/
+	background-color: blue;
+}
+/*右边栏样式*/
+div#md div.extra {
+	float: left;
+	width: 20%;
+	padding-bottom: 9999px;
+	margin-bottom: -9999px;
+	margin-left: -20%; /*使元素上浮到最右边*/
+	background-color: green;
+}
