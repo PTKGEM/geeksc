@@ -25,6 +25,7 @@ body {
 }
 /* CSS-Reset end */
 
+
 div.wrapper {
 	width: 960px;
 	margin: 0 auto;
@@ -54,7 +55,7 @@ div.wrapper {
 	overflow: hidden;
 	zoom: 1;
 }
-
+/*头部 Start*/
 #header-top {
 	width: 100%;
 	height: 30px;
@@ -406,3 +407,1345 @@ div.wrapper {
 	border-bottom: none;
 	border-top-color: #ca0309;
 }
+/*头部 End*/
+
+
+/*中间内容区域 Start*/
+/*右侧第一区块 Start*/
+div.content div.main-wrap section {
+	width: 318px;
+	padding: 0 15px;
+	border: 1px solid #dadada;
+	border-radius: 6px;
+}
+
+div.content div.main-wrap section h2.video-title {
+	position: relative;
+	height: 42px;
+	line-height: 42px;
+	color: #d90000;
+	font-size: 18px;
+	font-family: Arial;
+	background: url(../img/video_bg.gif) no-repeat 110px 8px;
+}
+div.content div.main-wrap section h2.video-title sup {
+	position: absolute;
+	top: -10px;
+	margin-left: -2px;
+}
+
+div.content div.main-wrap section div.video {
+	margin-bottom: 12px;
+}
+
+div.content div.main-wrap section ul.video-list {
+	padding-left: 75px;
+	height: 78px;
+	background: url(../img/video_bg.gif) no-repeat 3px -45px;
+}
+div.content div.main-wrap section ul.video-list li {
+	line-height: 22px;
+	text-indent: 14px;
+	background: url(../img/dot.gif) no-repeat 5px center;
+}
+div.content div.main-wrap section ul.video-list li a {
+	color: #4d4d4d;
+}
+div.content div.main-wrap section ul.video-list li a:hover {
+	text-decoration: underline;
+	color: #d90000;
+}
+
+div.content div.options {
+	position: relative;
+	width: 350px;
+}
+div.content div.options ul.nav {
+	height: 34px;
+	position: relative;
+	z-index: 2;
+}
+div.content div.options ul.nav li {
+	position: relative;
+	width: 172px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	border: 1px solid #dadada;
+	border-radius: 6px 6px 0 0;
+	cursor: pointer;
+}
+div.content div.options ul.nav li.active {
+	background: #fff;
+	border-bottom: none;
+}
+
+div.content div.options ul.nav li strong {
+	color: #cc0d13;
+	font-family: Arial;
+	font-weight: bold;
+}
+div.content div.options ul.nav li strong span {
+	color: #000;
+	position: relative;
+	top: -1px;
+	left: 2px;
+}
+
+div.content div.options ul.nav li a {
+	position: absolute;
+	top: 14px;
+	right: 16px;
+	width: 0;
+	height: 0;
+	border: 4px solid transparent;
+	border-bottom: none;
+}
+div.content div.options ul.nav li a.triangle-down-red {
+	border-top-color: #ca0309;
+}
+div.content div.options ul.nav li a.triangle-down-gray {
+	border-top-color: #c4bdbd;
+}
+
+div.content div.options div.tabcons {
+	position: absolute;
+	top: 34px;
+	left: 0;
+	width: 318px;
+	padding: 0 15px;
+	border: 1px solid #dadada;
+	border-top: none;
+	border-radius: 0 0 6px 6px;
+	z-index: 2;
+}
+
+div.content div.options div.tabcons div.hot-list {
+	position: relative;
+	width: 100%;
+	height: 374px;
+	padding-top: 10px;
+}
+
+div.content div.options div.tabcons div.hot-list ul.tab-con1 {
+	display: block;
+}
+div.content div.options div.tabcons div.hot-list ul.tab-con2 {
+	display: none;
+}
+
+div.content div.options div.tabcons div.hot-list ul li {
+	width: 100%;
+	height: 98px;
+	padding-top: 10px;
+	margin-bottom: 6px;
+	vertical-align: middle;
+	background: url(../img/hot_list_li_bg.gif);
+}
+div.content div.options div.tabcons div.hot-list ul li div.img {
+	float: left;
+	width: 106px;
+	height: 86px;
+}
+div.content div.options div.tabcons div.hot-list ul li div.img:hover {
+	outline: 1px solid #999;
+}
+div.content div.options div.tabcons div.hot-list ul li div.img a {
+	display: block;
+	width: 104px;
+	height: 84px;
+	border: 1px solid #e6e6e6;
+}
+
+div.content div.options div.tabcons div.hot-list ul li div.text {
+	float: right;
+	width: 190px;
+}
+div.content div.options div.tabcons div.hot-list ul li div.text h3 {
+	line-height: 24px;
+	padding-bottom: 6px;
+}
+div.content div.options div.tabcons div.hot-list ul li div.text h3 a {
+	font-size: 13px;
+	font-weight: normal;
+	color: #bb0d0d;
+}
+div.content div.options div.tabcons div.hot-list ul li div.text h3 a:hover {
+	text-decoration: underline;
+}
+div.content div.options div.tabcons div.hot-list ul li div.text p {
+	color: #6a6a6a;
+	line-height: 16px;
+}
+
+div.content div.options div.tabcons div.hot-list a.more {
+	position: absolute;
+	bottom: 12px;
+	right: 3px;
+}
+/*右侧第一区块 End*/
+
+/*右侧广告条 Start*/
+div.content div.main-ad {
+	border-radius: 6px;
+	margin: 10px 0;
+	overflow: hidden;
+}
+/*右侧广告条 End*/
+
+/*右侧第二区块 Start*/
+div.content div.main-wrap-2 {
+	padding-bottom: 10px;
+}
+
+div.content div.main-wrap-2 div.activity {
+	float: left;
+	width: 348px;
+	height: 498px;
+	border: 1px solid #dadada;
+	border-radius: 6px;
+}
+
+div.content div.main-wrap-2 div.activity h2.new-title {
+	position: relative;
+	height: 70px;
+	border-bottom: 2px solid #eee;
+	background: url(../img/new_title_bg.gif) no-repeat right 0;
+}
+div.content div.main-wrap-2 div.activity h2.new-title strong {
+	position: absolute;
+	top: 18px;
+	left: 26px;
+	color: #ea2b31;
+	font-size: 12px;
+	font-family: Arial;
+}
+div.content div.main-wrap-2 div.activity h2.new-title span {
+	position: absolute;
+	top: 30px;
+	left: 24px;
+	color: #333;
+	font-size: 24px;
+}
+div.content div.main-wrap-2 div.activity h2.new-title em {
+	position: absolute;
+	top: 15px;
+	left: 125px;
+	color: #ec1c16;
+	font-family: '微软雅黑';
+	font-size: 36px;
+	font-weight: 900;
+}
+
+div.content div.main-wrap-2 div.activity div.con-wraper div.info {
+	height: 104px;
+	padding: 16px 25px 0;
+}
+div.content div.main-wrap-2 div.activity div.con-wraper div.info div.img {
+	position: relative;
+	width: 84px;
+	height: 84px;
+}
+div.content div.main-wrap-2 div.activity div.con-wraper div.info div.img span.mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 84px;
+	height: 84px;
+	background: url(../img/activity_bg.gif) no-repeat -373px 0;
+}
+
+div.content div.main-wrap-2 div.activity div.con-wraper div.info div.text {
+	width: 204px;
+}
+div.content div.main-wrap-2 div.activity div.con-wraper div.info div.text h3 {
+	height: 32px;
+	font-size: 12px;
+}
+div.content div.main-wrap-2 div.activity div.con-wraper div.info div.text h3 em {
+	float: left;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	color: #cf3530;
+	font-family: arial;
+	font-size: 14px;
+	text-align: center;
+	margin-right: 4px;
+	background: url(../img/activity_bg.gif) no-repeat -348px 0;
+}
+div.content div.main-wrap-2 div.activity div.con-wraper div.info div.text h3 span {
+	float: left;
+	margin-right: 4px;
+	text-indent: 2px;
+	padding: 5px 0 0 2px;
+}
+div.content div.main-wrap-2 div.activity div.con-wraper div.info div.text p {
+	line-height: 18px;
+	color: #999;
+	clear: both;
+	padding-top: 6px;
+}
+
+
+div.content div.main-wrap-2 div.activity div.con-wraper div.calendar {
+	position: relative;
+	width: 323px;
+	padding-left: 25px;
+}
+div.content div.main-wrap-2 div.activity div.con-wraper div.calendar h3 {
+	height: 34px;
+	line-height: 34px;
+	margin-right: 30px;
+	word-spacing: 7px;
+	text-align: center;
+	background: url(../img/adorn.gif);
+}
+div.content div.main-wrap-2 div.activity div.con-wraper div.calendar h3 span {
+	font-size: 14px;
+	font-family: arial;
+	color: #666;
+}
+
+div.content div.main-wrap-2 div.activity div.con-wraper div.calendar ol li {
+	float: left;
+	position: relative;
+	width: 40px;
+	height: 40px;
+	color: #666;
+	font-family: arial;
+	font-weight: bold;
+	line-height: 40px;
+	text-align: center;
+	margin: 0 2px 2px 0;
+	background: #ededed;
+}
+div.content div.main-wrap-2 div.activity div.con-wraper div.calendar ol li.normal {
+	color: #ccc;
+	background: #f8f8f8;
+}
+div.content div.main-wrap-2 div.activity div.con-wraper div.calendar ol li img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+div.content div.main-wrap-2 div.activity div.con-wraper div.calendar ol li img.active {
+	width: 36px;
+	height: 36px;
+	border: 2px solid #d30408;-2
+}
+
+div.content div.main-wrap-2 div.recommend {
+	float: right;
+	width: 348px;
+	height: 498px;
+	border: 1px solid #dadada;
+	border-radius: 6px;
+}
+
+div.content div.main-wrap-2 div.recommend h2.new-title {
+	position: relative;
+	height: 70px;
+	font-family: arial;
+	background: url(../img/new_title_bg.gif) no-repeat right -70px;
+}
+div.content div.main-wrap-2 div.recommend h2.new-title strong {
+	position: absolute;
+	top: 18px;
+	left: 24px;
+	font-size: 12px;
+	color: #ea2b31;
+}
+div.content div.main-wrap-2 div.recommend h2.new-title span {
+	position: absolute;
+	top: 30px;
+	left: 24px;
+	color: #333;
+	font-size: 24px;
+}
+
+div.content div.main-wrap-2 div.recommend div.pic {
+	position: relative;
+	width: 294px;
+	height: 168px;
+	padding: 12px 12px 0;
+	margin: 0 auto;
+	border-radius: 6px;
+	background: #f6f6f6;
+}
+div.content div.main-wrap-2 div.recommend div.pic ul {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	width: 223px;
+	height: 133px;
+}
+div.content div.main-wrap-2 div.recommend div.pic ul li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 223px;
+	height: 133px;
+	border: 1px solid #fff;
+	z-index: 1;
+}
+div.content div.main-wrap-2 div.recommend div.pic ol {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+}
+div.content div.main-wrap-2 div.recommend div.pic ol li {
+	width: 54px;
+	height: 30px;
+	margin-bottom: 13px;
+	border: 3px solid #fff;
+}
+div.content div.main-wrap-2 div.recommend div.pic ol li.active {
+	border-color: #d30408;
+}
+div.content div.main-wrap-2 div.recommend div.pic ol li img {
+	width: 54px;
+	height: 30px;
+}
+div.content div.main-wrap-2 div.recommend div.pic p {
+	position: absolute;
+	left: 12px;
+	bottom: 2px;
+	font-family: "微软雅黑";
+	line-height: 32px;
+}
+
+div.content div.main-wrap-2 div.recommend ul.list {
+	padding: 18px 26px 0;
+}
+div.content div.main-wrap-2 div.recommend ul.list li {
+	height: 27px;
+	vertical-align: middle;
+}
+div.content div.main-wrap-2 div.recommend ul.list li em {
+	float: left;
+	margin-right: 7px;
+	color: #dadada;
+	font-weight: bold;
+}
+div.content div.main-wrap-2 div.recommend ul.list li em img {
+	vertical-align: middle;
+}
+div.content div.main-wrap-2 div.recommend ul.list li a {
+	float: left;
+	color: #454545;
+	font-family: "微软雅黑";
+}
+div.content div.main-wrap-2 div.recommend ul.list li a:hover {
+	text-decoration: underline;
+	color: #000;
+}
+div.content div.main-wrap-2 div.recommend ul.list span {
+	float: right;
+	font-family: arial;
+	font-size: 12px;
+	color: #999;
+}
+/*右侧第二区块 End*/
+
+/*右侧第三区块 Start*/
+div.content div.main-wrap div.con-pic {
+	position: absolute;
+	top: 34px;
+	left: 0;
+	width: 318px;
+	padding: 0 15px;
+	border: 1px solid #dadada;
+	border-radius: 0 0 6px 6px;
+	z-index: 1;
+}
+div.content div.main-wrap div.con-pic img:first-child {
+	display: inline-block;
+}
+div.content div.main-wrap div.con-pic img:last-child {
+	display: none;
+}
+
+
+div.content div.main-wrap div.section {
+	width: 318px;
+	height: 328px;
+	padding: 0 15px;
+	border: 1px solid #dadada;
+	border-radius: 6px;
+}
+
+div.content div.main-wrap div.section div.bbs h2 {
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+	font-family: "微软雅黑";
+}
+div.content div.main-wrap div.section div.bbs h2.main-title strong {
+	font-family: arial;
+	color: #cc0d13;
+	font-size: 12px;
+}
+div.content div.main-wrap div.section div.bbs h2.main-title strong span {
+	position: relative;
+	top: -1px;
+	color: #000;
+}
+
+div.content div.main-wrap div.section div.bbs h2.main-title a {
+	position: absolute;
+	top: 16px;
+	right: 2px;
+}
+
+div.content div.main-wrap div.section div.bbs ol li {
+	position: relative;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 3px;
+	font-family: "微软雅黑";
+	vertical-align: middle;
+	border-radius: 6px;
+	background: #f6f6f6;
+}
+div.content div.main-wrap div.section div.bbs ol li strong {
+	float: left;
+	width: 45px;
+	color: #d80000;
+	text-indent: 10px;
+}
+div.content div.main-wrap div.section div.bbs ol li img {
+	display: none;
+}
+div.content div.main-wrap div.section div.bbs ol li a {
+	color: #333;
+}
+div.content div.main-wrap div.section div.bbs ol li span {
+	display: none;
+}
+div.content div.main-wrap div.section div.bbs ol li em {
+	font-family: arial;
+	display: none;
+}
+div.content div.main-wrap div.section div.bbs ol li b {
+	float: right;
+	color: #666;
+	padding-right: 22px;
+}
+
+div.content div.main-wrap div.section div.bbs ol li.active {
+	height: 70px;
+	background: #d80000;
+}
+div.content div.main-wrap div.section div.bbs ol li.active img {
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+div.content div.main-wrap div.section div.bbs ol li.active a {
+	position: absolute;
+	top: 7px;
+	left: 70px;
+	color: #fff;
+}
+div.content div.main-wrap div.section div.bbs ol li.active span {
+	display: block;
+	position: absolute;
+	top: 33px;
+	left: 70px;
+	color: #fff;
+}
+div.content div.main-wrap div.section div.bbs ol li.active em {
+	display: block;
+	position: absolute;
+	bottom: -4px;
+	right: 4px;
+	font-size: 26px;
+	font-weight: bold;
+	color: #fff;
+}
+div.content div.main-wrap div.section div.bbs ol li.active b {
+	display: none;
+}
+/*右侧第三区块 End*/
+
+/*右侧第四区块 Start*/
+div.content div.main-wrap-4 {
+	padding-bottom: 10px;
+}
+
+div.content div.main-wrap-4 div.section {
+	width: 318px;
+	padding: 0 15px;
+	border: 1px solid #dadada;
+	border-radius: 6px;
+}
+
+div.content div.main-wrap-4 div.section h2 {
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+}
+div.content div.main-wrap-4 div.section h2 strong {
+	color: #cc0d13;
+	font-family: arial;
+	font-size: 12px;
+}
+div.content div.main-wrap-4 div.section h2 span {
+	position: relative;
+	top: -1px;
+	color: #000;
+}
+div.content div.main-wrap-4 div.section h2 a {
+	position: absolute;
+	top: 15px;
+	right: 0;
+}
+
+div.content div.main-wrap-4 div.tab {
+	height: 25px;
+	padding: 0 10px;
+	border-bottom: 1px solid #dadada;
+}
+
+div.content div.main-wrap-4 div.tab ul.tabNav3 {
+	position: relative;
+	height: 26px;
+	margin-bottom: -1px;
+}
+div.content div.main-wrap-4 div.tab ul.tabNav3 li {
+	float: left;
+	position: relative;
+	width: 98px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	border: 1px solid #dadada;
+	border-radius: 4px 4px 0 0;
+	margin-right: -1px;
+}
+div.content div.main-wrap-4 div.tab ul.tabNav3 li.active {
+	color: #454545;
+	font-weight: bold;
+	border-bottom: 1px solid #fff;
+	background: #fff;
+}
+
+div.content div.main-wrap-4 div.tab ul.tabNav3 li a {
+	position: absolute;
+	top: 11px;
+	right: 11px;
+	width: 0;
+	height: 0;
+	border: 4px solid transparent;
+	border-bottom: none;
+}
+div.content div.main-wrap-4 div.tab ul.tabNav3 li a.triangle-down-red {
+	border-top-color: #ca0309;
+}
+div.content div.main-wrap-4 div.tab ul.tabNav3 li a.triangle-down-gray {
+	border-top-color: #c4bdbd;
+}
+
+div.content div.main-wrap-4 ul.list-section li {
+	width: 100%;
+	height: 27px;
+	line-height: 27px;
+	vertical-align: middle;
+	border-top: 1px dotted #dadada;
+	background: url(../img/dot.gif) no-repeat 5px center;
+}
+div.content div.main-wrap-4 ul.list-section li.title {
+	color: #999;
+	border-top: none;
+	background: none;
+}
+
+div.content div.main-wrap-4 ul.list-section li span.col1,
+div.content div.main-wrap-4 ul.list-section li span.col2 {
+	float: left;
+}
+div.content div.main-wrap-4 ul.list-section li span.col1 {
+	width: 268px;
+}
+div.content div.main-wrap-4 ul.list-section li span.col2 {
+	width: 50px;
+	text-align: center;
+}
+div.content div.main-wrap-4 ul.list-section li.title span.col1 {
+	text-align: center;
+}
+
+div.content div.main-wrap-4 ul.list-section li span.col1 a,
+div.content div.main-wrap-4 ul.list-section li span.col2 a {
+	float: left;
+	color: #333;
+	text-indent: 14px;
+}
+div.content div.main-wrap-4 ul.list-section li span.col1 a:hover,
+div.content div.main-wrap-4 ul.list-section li span.col2 a:hover {
+	color: #d80000;
+}
+div.content div.main-wrap-4 ul.list-section li span.col1 a em,
+div.content div.main-wrap-4 ul.list-section li span.col2 a em {
+	color: #939393;
+}
+div.content div.main-wrap-4 ul.list-section li span.col1 a em span,
+div.content div.main-wrap-4 ul.list-section li span.col2 a em span {
+	color: #c75d61;
+}
+
+div.content div.main-wrap-4 ul.list-section li span img {
+	position: relative;
+	top: 8px;
+}
+
+div.content div.main-wrap-4 div.soso {
+	width: 308px;
+	height: 47px;
+	padding: 17px 0 0 10px;
+	border-top: 1px dotted #dadada;
+}
+div.content div.main-wrap-4 div.soso form strong {
+	float: left;
+	padding-top: 2px;
+	color: #595959;
+	font-family: '微软雅黑';
+}
+div.content div.main-wrap-4 div.soso form input.text {
+	float: left;
+	width: 172px;
+	height: 20px;
+	line-height: 20px;
+	color: #9c9c9c;
+	padding: 0 4px;
+	border: 1px solid #9c9c9c;
+	outline: none;
+}
+div.content div.main-wrap-4 div.soso form input.btn {
+	float: left;
+	position: relative;
+	top: -2px;
+	width: 24px;
+	height: 25px;
+	margin-left: 10px;
+	border: none;
+	background: url(../img/btn.gif) no-repeat 0 0;
+	outline: none;
+}
+
+
+div.content div.main-wrap-4 div.fr {
+	width: 318px;
+	height: 298px;
+	padding: 0 15px;
+	border: 1px solid #dadada;
+	border-radius: 6px;
+}
+div.content div.main-wrap-4 div.fr div.hot-area {
+	width: 100%;
+	height: 258px;
+}
+div.content div.main-wrap-4 div.fr div.hot-area li {
+	float: left;
+	position: relative;
+	height: 78px;
+	margin: 0 2px 2px 0;
+}
+div.content div.main-wrap-4 div.fr div.hot-area li.area1 p {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 12px 0 0 12px;
+	width: 144px;
+	height: 66px;
+	line-height: 18px;
+	color: #fff;
+	background: rgba(0,0,0, .3);
+}
+div.content div.main-wrap-4 div.fr div.hot-area li.eight p {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 12px 0 0 12px;
+	width: 66px;
+	height: 66px;
+	line-height: 18px;
+	color: #fff;
+	background: rgba(0,0,0, .3);
+}
+/*右侧第四区块 End*/
+
+/*右侧第五区块 Start*/
+div.content div.main-wrap-5 {
+	padding-bottom: 10px;
+	font-size: 12px;
+	font-family: '微软雅黑';
+}
+div.content div.main-wrap-5 div.fl {
+	width: 318px;
+	padding: 0 15px;
+	border: 1px solid #dadada;
+	border-radius: 6px;
+}
+div.content div.main-wrap-5 div h2.main-title {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+}
+div.content div.main-wrap-5 div h2.main-title strong {
+	font-family: arial;
+	color: #cc0d13;
+}
+div.content div.main-wrap-5 div h2.main-title strong span {
+	position: relative;
+	top: -1px;
+	color: #000;
+}
+div.content div.main-wrap-5 div.fl div.help {
+	height: 208px;
+}
+div.content div.main-wrap-5 div.fl div.help p {
+	text-indent: 2em;
+}
+div.content div.main-wrap-5 div.fl div.help ul {
+	height: 44px;
+	line-height: 44px;
+	border-bottom: 1px solid #dadada;
+}
+div.content div.main-wrap-5 div.fl div.help ul li.phone,
+div.content div.main-wrap-5 div.fl div.help ul li.msn {
+	width: 154px;
+	text-indent: 30px;
+	font-family: arial;
+}
+div.content div.main-wrap-5 div.fl div.help ul li.phone {
+	font-size: 16px;
+	font-weight: bold;
+	color: #b80000;
+	background: url(../img/help.gif) no-repeat 6px 12px;
+}
+div.content div.main-wrap-5 div.fl div.help ul li.msn {
+	color: #333;
+	background: url(../img/help.gif) no-repeat 8px -32px;
+}
+div.content div.main-wrap-5 div.fl div.help dl {
+	width: 144px;
+	padding: 15px 0 0 10px;
+	line-height: 18px;
+}
+div.content div.main-wrap-5 div.fl div.help dl dt {
+	font-weight: bold;
+	padding-bottom: 8px;
+}
+div.content div.main-wrap-5 div.fl div.help dl dd {
+	text-indent: 12px;
+	background: url(../img/dot.gif) no-repeat 4px center;
+}
+div.content div.main-wrap-5 div.fl div.help dl dd a {
+	color: #333;
+}
+div.content div.main-wrap-5 div.fl div.help dl dd a:hover {
+	text-decoration: underline;
+}
+
+div.content div.main-wrap-5 div.fr {
+	width: 318px;
+	height: 248px;
+	padding: 0 15px;
+	border: 1px solid #dadada;
+	border-radius: 6px;
+}
+div.content div.main-wrap-5 div.fr h2 a {
+	position: absolute;
+	top: 15px;
+	right: 0;
+}
+div.content div.main-wrap-5 div.fr ul.media {
+	height: 205px;
+	padding-top: 3px;
+}
+div.content div.main-wrap-5 div.fr ul.media li {
+	height: 50px;
+	vertical-align: middle;
+}
+div.content div.main-wrap-5 div.fr ul.media li a {
+	float: left;
+	width: 100px;
+}
+div.content div.main-wrap-5 div.fr ul.media li p {
+	float: right;
+	width: 200px;
+	color: #333;
+}
+/*右侧第五区块 End*/
+
+/*左侧边内容样式*/
+div.content div.side {
+	width: 240px;
+}
+
+div.content div.side div.login {
+	height: 138px;
+	margin-bottom: 10px;
+	border: 1px solid #dadada;
+	border-radius: 6px;
+	overflow: hidden;
+}
+div.content div.side div.login h2 {
+	text-indent: 12px;
+	color: #000;
+	font-size: 12px;
+	line-height: 33px;
+	border-bottom: 1px solid #dadada;
+}
+div.content div.side div.login h2 em {
+	position: relative;
+	top: 1px;
+	color: #cc0d13;
+	font-family: arial;
+}
+div.content div.side div.login div.form {
+	position: relative;
+	width: 214px;
+	padding: 15px 0 2px;
+	margin: 0 auto;
+	border-bottom: 1px solid #f2f2f2;
+}
+div.content div.side div.login div.form ul li {
+	height: 26px;
+	vertical-align: middle;
+}
+div.content div.side div.login div.form ul li span {
+	float: left;
+	position: relative;
+	top: 2px;
+	left: 8px;
+	width: 58px;
+	color: #595959;
+	word-spacing: 7px;
+}
+div.content div.side div.login div.form ul li input.text {
+	float: left;
+	width: 87px;
+	height: 17px;
+	margin-right: 3px;
+	border: 1px solid #dadada;
+	background: #f7f7f7;
+}
+div.content div.side div.login div.form ul li input.check {
+	float: left;
+	outline: none;
+	position: relative;
+	top: 3px;
+	left: 3px;
+}
+div.content div.side div.login div.form ul li strong {
+	float: left;
+	position: relative;
+	top: 2px;
+	padding-left: 6px;
+	color: #333;
+}
+div.content div.side div.login div.form ul li input.btn {
+	float: left;
+	position: relative;
+	top: -2px;
+	left: 3px;
+	width: 54px;
+	height: 22px;
+	color: #fff;
+	font-family: "宋体";
+	font-weight: bold;
+	border: none;
+	border-radius: 10px;
+	background: #cb0000;
+}
+div.content div.side div.login p {
+	line-height: 32px;
+	text-align: center;
+	word-spacing: 20px;
+}
+div.content div.side div.login p a {
+	padding-left: 14px;
+	color: #666;
+	background: url(../img/dot.gif) no-repeat 4px center;
+}
+div.content div.side div.login p a:hover {
+	text-decoration: underline;
+}
+
+div.content div.side div.ad-border {
+	width: 238px;
+	height: 88px;
+	margin-bottom: 10px;
+	border: 1px solid #dadada;
+	border-radius: 6px;
+	overflow: hidden;
+}
+div.content div.side div.side-ad {
+	margin-bottom: 10px;
+	border: 1px solid #dadada;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+div.content div.side div.side-section {
+	margin-bottom: 10px;
+	padding: 0 12px;
+	border: 1px solid #dadada;
+	border-radius: 6px;
+}
+div.content div.side div.side-section h2.main-title {
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+}
+div.content div.side div.side-section h2.main-title strong {
+	font-size: 12px;
+	font-family: arial;
+	color: #cc0d13;
+}
+div.content div.side div.side-section h2.main-title strong span {
+	position: relative;
+	top: -1px;
+	color: #000;
+}
+div.content div.side div.side-section h2.main-title a {
+	position: absolute;
+	top: 15px;
+	right: 2px;
+}
+div.content div.side div.side-section div.wrap-section1 {
+	padding-bottom: 5px;
+}
+div.content div.side div.side-section div.wrap-section1 div.tab {
+	height: 25px;
+	padding: 0 6px;
+	border-bottom: 1px solid #dadada;
+}
+div.content div.side div.side-section div.wrap-section1 div.tab ul {
+	position: relative;
+	height: 26px;
+	margin-bottom: -1px;
+}
+div.content div.side div.side-section div.wrap-section1 div.tab ul li {
+	float: left;
+	position: relative;
+	width: 66px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	color: #666;
+	border: 1px solid #dadada;
+	border-radius: 4px 4px 0 0;
+	margin-right: -1px;
+	cursor: pointer;
+}
+div.content div.side div.side-section div.wrap-section1 div.tab ul li.active {
+	border-bottom: 1px solid #fff;
+	color: #454545;
+	background: #fff;
+	font-weight: bold;
+}
+div.content div.side div.side-section div.wrap-section1 div.tab ul li.gradient {
+	background: -webkit-linear-gradient(top, #FFFFFF, #f8f8f8);
+}
+div.content div.side div.side-section div.wrap-section1 div.tab ul li a {
+	position: absolute;
+	top: 11px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border: 4px solid transparent;
+	border-bottom: none;
+}
+div.content div.side div.side-section div.wrap-section1 div.tab ul li a.triangle-down-red {
+	border-top-color: #ca0309;
+}
+div.content div.side div.side-section div.wrap-section1 div.tab ul li a.triangle-down-gray {
+	border-top-color: #c4bdbd;
+}
+div.content div.side div.side-section div.wrap-section1 ul.list-section li {
+	height: 27px;
+	line-height: 27px;
+	vertical-align: middle;
+	border-top: 1px solid #dadada;
+	color: #999;
+	font-family: '微软雅黑';
+	background: url(../img/dot.gif) no-repeat 5px center;
+}
+div.content div.side div.side-section div.wrap-section1 ul.list-section li span {
+	float: left;
+}
+div.content div.side div.side-section div.wrap-section1 ul.list-section li span.col1 {
+	width: 137px;
+}
+div.content div.side div.side-section div.wrap-section1 ul.list-section li span.col1 a {
+	float: left;
+	color: #333;
+	text-indent: 14px;
+}
+div.content div.side div.side-section div.wrap-section1 ul.list-section li span.col1 a:hover {
+	color: #d80000;
+}
+div.content div.side div.side-section div.wrap-section1 ul.list-section li span.col2 {
+	width: 35px;
+	color: #d80000;
+	text-align: center;
+}
+div.content div.side div.side-section div.wrap-section1 ul.list-section li span.col3 {
+	width: 36px;
+	color: #333;
+	text-align: center;
+}
+div.content div.side div.side-section div.wrap-section1 ul.list-section li.title {
+	border-top: none;
+	color: #999;
+	background: none;
+}
+div.content div.side div.side-section div.wrap-section1 ul.list-section li.title span {
+	float: left;
+	text-align: center;
+	color: #999;
+	background: none;
+}
+
+div.content div.side div.side-section div.wrap-section2 {
+	padding-bottom: 2px;
+}
+div.content div.side div.side-section div.wrap-section2 ul li {
+	width: 100%;
+	border-bottom: 1px dotted #dadada;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	vertical-align: middle;
+	overflow: hidden;
+}
+div.content div.side div.side-section div.wrap-section2 ul li div.img {
+	width: 96px;
+	height: 73px;
+	position: relative;
+}
+div.content div.side div.side-section div.wrap-section2 ul li div.img a {
+	display: block;
+	width: 90px;
+	height: 67px;
+	padding: 2px;
+	border: 1px solid #dadada;
+}
+div.content div.side div.side-section div.wrap-section2 ul li div.img a:hover {
+	border: 1px solid #b80000;
+}
+div.content div.side div.side-section div.wrap-section2 ul li div.text {
+	width: 108px;
+}
+div.content div.side div.side-section div.wrap-section2 ul li div.text a:hover {
+	text-decoration: underline;
+}
+div.content div.side div.side-section div.wrap-section2 ul li div.text h3 {
+	padding-bottom: 4px;
+	font-weight: normal;
+}
+div.content div.side div.side-section div.wrap-section2 ul li div.text h3 a {
+	color: #b80000;
+	font-family: '微软雅黑';
+	font-size: 12px;
+}
+div.content div.side div.side-section div.wrap-section2 ul li div.text p {
+	color: #999;
+	line-height: 18px;
+}
+div.content div.side div.side-section div.wrap-section2 ul li div.text p a {
+	color: #666;
+}
+div.content div.side div.side-section div.wrap-section2 ul li div.text p a:hover {
+	color: #b80000;
+}
+
+
+div.content div.side div.side-section h2.main-title strong sup {
+	position: absolute;
+	top: -3px;
+	left: 18px;
+}
+div.content div.side div.side-section div.holepic {
+	height: 138px;
+}
+div.content div.side div.side-section div.holepic a {
+	color: #333;
+}
+div.content div.side div.side-section div.holepic a:hover {
+	color: #b80000;
+	text-decoration: underline;
+}
+div.content div.side div.side-section div.holepic a span {
+	display: block;
+	line-height: 26px;
+}
+
+
+div.content div.side div.side-section div.wrap-section3 {
+	padding-bottom: 1px;
+	background: #fff;
+}
+div.content div.side div.side-section div.wrap-section3 ul.pic-list {
+	padding-bottom: 10px;
+}
+div.content div.side div.side-section div.wrap-section3 ul.pic-list li {
+	vertical-align: middle;
+	overflow: hidden;
+}
+div.content div.side div.side-section div.wrap-section3 ul.pic-list li div.img a {
+	display: block;
+	width: 90px;
+	height: 67px;
+	padding: 2px;
+	border: 1px solid #dadada;
+}
+div.content div.side div.side-section div.wrap-section3 ul.pic-list li div.img a:hover {
+	border: 1px solid #b80000;
+}
+div.content div.side div.side-section div.wrap-section3 ul.pic-list li div.text {
+	width: 108px;
+	font-family: '微软雅黑';
+}
+div.content div.side div.side-section div.wrap-section3 ul.pic-list li div.text h3 {
+	padding-bottom: 4px;
+}
+div.content div.side div.side-section div.wrap-section3 ul.pic-list li div.text h3 a {
+	font-size: 12px;
+	font-weight: normal;
+	color: #b80000;
+}
+div.content div.side div.side-section div.wrap-section3 ul.pic-list li div.text p {
+	color: #999;
+}
+div.content div.side div.side-section div.wrap-section3 ul.pic-list li div.text p a {
+	color: #666;
+}
+div.content div.side div.side-section div.wrap-section3 ul.pic-list li div.text p a:hover {
+	color: #b80000;
+	text-decoration: underline;
+}
+div.content div.side div.side-section div.wrap-section3 ul.list-section li {
+	height: 27px;
+	line-height: 27px;
+	border-top: 1px dotted #dadada;
+	vertical-align: middle;
+	background: url(../img/dot.gif) no-repeat 5px center;
+}
+div.content div.side div.side-section div.wrap-section3 ul.list-section li a {
+	float: left;
+	color: #333;
+	text-indent: 14px;
+}
+div.content div.side div.side-section div.wrap-section3 ul.list-section li a:hover {
+	color: #b80000;
+}
+div.content div.side div.side-section div.wrap-section3 ul.list-section li a em {
+	color: #939393;
+}
+div.content div.side div.side-section div.wrap-section3 ul.list-section li a em span {
+	color: #c75d61;
+}
+
+div.content div.side div.side-section div.wrap-section4 {
+	padding-bottom: 7px;
+}
+div.content div.side div.side-section div.wrap-section4 ul.pic-list {
+	overflow: hidden;
+}
+div.content div.side div.side-section div.wrap-section4 ul.pic-list li {
+	float: left;
+	width: 107px;
+	height: 150px;
+	overflow: hidden;
+}
+div.content div.side div.side-section div.wrap-section4 ul.pic-list li div.img a {
+	display: block;
+	width: 90px;
+	height: 67px;
+	padding: 2px;
+	border: 1px solid #dadada;
+}
+div.content div.side div.side-section div.wrap-section4 ul.pic-list li div.img a:hover {
+	border: 1px solid #b80000;
+}
+div.content div.side div.side-section div.wrap-section4 ul.pic-list li div.text {
+	font-family: '微软雅黑';
+}
+div.content div.side div.side-section div.wrap-section4 ul.pic-list li div.text h3 {
+	padding: 5px 0 4px 0;
+}
+div.content div.side div.side-section div.wrap-section4 ul.pic-list li div.text h3 a {
+	color: #b80000;
+	font-weight: normal;
+	font-size: 12px;
+}
+div.content div.side div.side-section div.wrap-section4 ul.pic-list li div.text p {
+	color: #999;
+}
+div.content div.side div.side-section div.wrap-section4 ul.pic-list li div.text p a {
+	color: #666;
+}
+div.content div.side div.side-section div.wrap-section4 ul.pic-list li div.text p a:hover {
+	color: #b80000;
+	text-decoration: underline;
+}
+div.content div.side div.side-section div.wrap-section4 ul.list-section li {
+	height: 27px;
+	line-height: 27px;
+	border-top: 1px dotted #dadada;
+	vertical-align: middle;
+	background: url(../img/dot.gif) no-repeat 5px center;
+}
+div.content div.side div.side-section div.wrap-section4 ul.list-section li a {
+	float: left;
+	color: #333;
+	text-indent: 14px;
+}
+div.content div.side div.side-section div.wrap-section4 ul.list-section li a:hover {
+	color: #b80000;
+}
+div.content div.side div.side-section div.wrap-section4 ul.list-section li a em {
+	color: #939393;
+}
+div.content div.side div.side-section div.wrap-section4 ul.list-section li a em span {
+	color: #c75d61;
+}
+/*左侧边栏内容 End*/
+/*中间内容区域 End*/
+
+/*页脚 Start*/
+footer {
+	width: 958px;
+	height: 64px;
+	padding-top: 14px;
+	line-height: 25px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	text-align: center;
+	border: 1px solid #dadada;
+	border-radius: 6px;
+	color: #666666;
+	background: #f9f9f9;
+}
+footer a {
+	color: #454545;
+	margin: 0 6px;
+}
+footer a:hover {
+	text-decoration: underline;
+}
+footer span {
+	color: #999;
+	font-family: arial;
+}
+/*页脚 End*/
